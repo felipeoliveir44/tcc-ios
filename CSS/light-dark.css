@@ -1,0 +1,192 @@
+.content_light-dark_search .light-dark {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content_light-dark_search .light-dark label {
+    width: 125px;
+    height: 50px;
+    position: relative;
+    display: block;
+    background: #ebebeb;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.content_light-dark_search .light-dark label::after {
+    content: "";
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+    background: linear-gradient(180deg, #ffcc89, #d8860b);
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.content_light-dark_search .light-dark input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.content_light-dark_search .light-dark input:checked+label {
+    background: #242424;
+}
+
+.content_light-dark_search .light-dark input:checked+label::after {
+    left: 122.5px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg, #777, #3a3a3a);
+}
+
+.content_light-dark_search .light-dark label:active::after {
+    width: 65px;
+}
+
+.content_light-dark_search .light-dark input:checked+label+.background {
+    background: #242424;
+}
+
+.content_light-dark_search .light-dark label svg {
+    position: absolute;
+    width: 30px;
+    top: 10px;
+    z-index: 50;
+}
+
+.content_light-dark_search .light-dark label svg.sun {
+    left: 10px;
+    fill: #fff;
+    transition: 0.3s;
+}
+
+.content_light-dark_search .light-dark label svg.moon {
+    left: 85px;
+    fill: #7e7e7e;
+    transition: 0.3s;
+}
+
+.content_light-dark_search .light-dark input:checked+label+svg.sun {
+    fill: #7e7e7e;
+}
+
+.content_light-dark_search .light-dark input:checked+label+svg.moon {
+    fill: #fff;
+}
+
+@media (max-width: 580px){
+    .content_light-dark_search .light-dark label {
+        width: 62.5px;
+        height: 25px;
+    }
+    .content_light-dark_search .light-dark label::after {
+        width: 22.5px;
+        height: 22.5px;
+        top: 1.25px;
+        left: 1.25px;
+    }
+    .content_light-dark_search .light-dark input:checked+label::after {
+        left: 61.25px;
+    }
+    .content_light-dark_search .light-dark label:active::after {
+        width: 32.5px;
+    }
+    .content_light-dark_search .light-dark label svg {
+        width: 15px;
+        top: 5px;
+        z-index: 25;
+    }
+    .content_light-dark_search .light-dark label svg.sun {
+        left: 5px;
+    }
+    .content_light-dark_search .light-dark label svg.moon {
+        left: 42.5px;
+    }
+  }
+
+
+  /* .background{
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    z-index: -1;
+    position: absolute;
+    transition: 0.3s;
+} */
+
+
+
+/* <div class="light-dark">
+<input type="checkbox" id="darkmode-toggle">
+<label for="darkmode-toggle">
+    <svg fill="#000000" class="sun" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 496 496" xml:space="preserve">
+        <g>
+            <g>
+                <g>
+                    <rect x="152.994" y="58.921"
+                        transform="matrix(0.3827 0.9239 -0.9239 0.3827 168.6176 -118.5145)"
+                        width="40.001" height="16" />
+                    <rect x="46.9" y="164.979"
+                        transform="matrix(0.9239 0.3827 -0.3827 0.9239 71.29 -12.4346)" width="40.001"
+                        height="16" />
+                    <rect x="46.947" y="315.048"
+                        transform="matrix(0.9239 -0.3827 0.3827 0.9239 -118.531 50.2116)" width="40.001"
+                        height="16" />
+
+                    <rect x="164.966" y="409.112"
+                        transform="matrix(-0.9238 -0.3828 0.3828 -0.9238 168.4872 891.7491)" width="16"
+                        height="39.999" />
+
+                    <rect x="303.031" y="421.036"
+                        transform="matrix(-0.3827 -0.9239 0.9239 -0.3827 50.2758 891.6655)"
+                        width="40.001" height="16" />
+
+                    <rect x="409.088" y="315.018"
+                        transform="matrix(-0.9239 -0.3827 0.3827 -0.9239 701.898 785.6559)"
+                        width="40.001" height="16" />
+
+                    <rect x="409.054" y="165.011"
+                        transform="matrix(-0.9239 0.3827 -0.3827 -0.9239 891.6585 168.6574)"
+                        width="40.001" height="16" />
+                    <rect x="315.001" y="46.895"
+                        transform="matrix(0.9238 0.3828 -0.3828 0.9238 50.212 -118.5529)" width="16"
+                        height="39.999" />
+                    <path d="M248,88c-88.224,0-160,71.776-160,160s71.776,160,160,160s160-71.776,160-160S336.224,88,248,88z M248,392
+c-79.4,0-144-64.6-144-144s64.6-144,144-144s144,64.6,144,144S327.4,392,248,392z" />
+                    <rect x="240" width="16" height="72" />
+                    <rect x="62.097" y="90.096"
+                        transform="matrix(0.7071 0.7071 -0.7071 0.7071 98.0963 -40.6334)" width="71.999"
+                        height="16" />
+                    <rect y="240" width="72" height="16" />
+
+                    <rect x="90.091" y="361.915"
+                        transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 -113.9157 748.643)" width="16"
+                        height="71.999" />
+                    <rect x="240" y="424" width="16" height="72" />
+
+                    <rect x="361.881" y="389.915"
+                        transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 397.8562 960.6281)"
+                        width="71.999" height="16" />
+                    <rect x="424" y="240" width="72" height="16" />
+                    <rect x="389.911" y="62.091"
+                        transform="matrix(0.7071 0.7071 -0.7071 0.7071 185.9067 -252.6357)" width="16"
+                        height="71.999" />
+                </g>
+            </g>
+        </g>
+    </svg>
+    <svg class="moon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#000000"
+            d="M240.448 240.448a384 384 0 1 0 559.424 525.696 448 448 0 0 1-542.016-542.08 390.592 390.592 0 0 0-17.408 16.384zm181.056 362.048a384 384 0 0 0 525.632 16.384A448 448 0 1 1 405.056 76.8a384 384 0 0 0 16.448 525.696z" />
+    </svg>
+</label>
+<div class="background"></div> */

@@ -1,0 +1,14 @@
+.content_light-dark_search {
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;   
+    max-width: 1250px;
+    margin: auto;
+    padding: 10px 40px;
+    justify-content: space-between;
+}
+
+.tudo {
+    background-color: black;
+    width: 100%;
+}
