@@ -44,10 +44,12 @@ p {
 
 @media (max-width: 900px) {
     section {
+        margin: 1%;
         width: 100%;
     }
 
     .noticias {
-        width: 100%;
+        width: 80%;
     }
+
 }
