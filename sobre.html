@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>World Sports</title>
+    <link rel="icon" type="Image" href="/img/WhatsApp Image 2023-05-16 at 19.10.23.jpeg">
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/sobre.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/dark_mode_and_search.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <div class="content-header">
+            <img src="/img/WhatsApp Image 2023-05-16 at 19.10.23.jpeg" alt="" class="logo">
+            <div class="navigation">
+                <ul class="menu">
+                    <div class="close-btn"></div>
+                    <li class="menu-item"><a href="#">Home</a></li>
+                    <li class="menu-item">
+                        <a class="sub-btn" href="#">Notícias <i class="fas fa-angle-down"></i></a>
+                        <ul class="sub-menu">
+                            <li class="sub-item"><a href="#">Basquete</a></li>
+                            <li class="sub-item more">
+                                <a class="more-btn" href="#">Futebol <i class="fas fa-angle-right"></i></a>
+                                <ul class="more-menu">
+                                    <li class="more-item"><a href="#">Masculino</a></li>
+                                    <li class="more-item"><a href="#">Feminino</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="#">Streaming</a></li>
+                    <li class="menu-item">
+                    </li>
+                    <li class="menu-item"><a href="#">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="menu-btn"></div>
+        </div>
+    </header>
+
+    <div class="light-dark_search_background">
+        <div class="content_light-dark_search">
+            <div class="light-dark">
+                <input type="checkbox" id="darkmode-toggle">
+                <label for="darkmode-toggle">
+                    <svg fill="#000000" class="sun" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 496 496" xml:space="preserve">
+                        <rect x="152.994" y="58.921" transform="matrix(0.3827 0.9239 -0.9239 0.3827 168.6176 -118.5145)"
+                            width="40.001" height="16" />
+                        <rect x="46.9" y="164.979" transform="matrix(0.9239 0.3827 -0.3827 0.9239 71.29 -12.4346)"
+                            width="40.001" height="16" />
+                        <rect x="46.947" y="315.048" transform="matrix(0.9239 -0.3827 0.3827 0.9239 -118.531 50.2116)"
+                            width="40.001" height="16" />
+
+                        <rect x="164.966" y="409.112"
+                            transform="matrix(-0.9238 -0.3828 0.3828 -0.9238 168.4872 891.7491)" width="16"
+                            height="39.999" />
+
+                        <rect x="303.031" y="421.036"
+                            transform="matrix(-0.3827 -0.9239 0.9239 -0.3827 50.2758 891.6655)" width="40.001"
+                            height="16" />
+
+                        <rect x="409.088" y="315.018"
+                            transform="matrix(-0.9239 -0.3827 0.3827 -0.9239 701.898 785.6559)" width="40.001"
+                            height="16" />
+
+                        <rect x="409.054" y="165.011"
+                            transform="matrix(-0.9239 0.3827 -0.3827 -0.9239 891.6585 168.6574)" width="40.001"
+                            height="16" />
+                        <rect x="315.001" y="46.895" transform="matrix(0.9238 0.3828 -0.3828 0.9238 50.212 -118.5529)"
+                            width="16" height="39.999" />
+                        <path d="M248,88c-88.224,0-160,71.776-160,160s71.776,160,160,160s160-71.776,160-160S336.224,88,248,88z M248,392
+            c-79.4,0-144-64.6-144-144s64.6-144,144-144s144,64.6,144,144S327.4,392,248,392z" />
+                        <rect x="240" width="16" height="72" />
+                        <rect x="62.097" y="90.096" transform="matrix(0.7071 0.7071 -0.7071 0.7071 98.0963 -40.6334)"
+                            width="71.999" height="16" />
+                        <rect y="240" width="72" height="16" />
+
+                        <rect x="90.091" y="361.915"
+                            transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 -113.9157 748.643)" width="16"
+                            height="71.999" />
+                        <rect x="240" y="424" width="16" height="72" />
+
+                        <rect x="361.881" y="389.915"
+                            transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 397.8562 960.6281)" width="71.999"
+                            height="16" />
+                        <rect x="424" y="240" width="72" height="16" />
+                        <rect x="389.911" y="62.091" transform="matrix(0.7071 0.7071 -0.7071 0.7071 185.9067 -252.6357)"
+                            width="16" height="71.999" />
+                    </svg>
+                    <svg class="moon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#000000"
+                            d="M240.448 240.448a384 384 0 1 0 559.424 525.696 448 448 0 0 1-542.016-542.08 390.592 390.592 0 0 0-17.408 16.384zm181.056 362.048a384 384 0 0 0 525.632 16.384A448 448 0 1 1 405.056 76.8a384 384 0 0 0 16.448 525.696z" />
+                    </svg>
+                </label>
+                <div class="background"></div>
+            </div>
+            <div class="search_content">
+                <div class="search">
+                    <input class="srch" type="search" name="" placeholder="Type To text">
+                    <a href="#"> <button class="btn">Search</button></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="sobre_conteudo">
+        <div class="sobre">
+            <div>
+                <h1>Empresa</h1>
+                <p>A World Sports foi criada em 2023 e sediada em Santa Mônica na Califórnia (EUA), sendo seus
+                    fundadores: <strong>Milena Stephany; Luiz Felipe; Mateus Tavares; Vinicius Mantovani</strong>. Somos
+                    uma empresa com
+                    o foco no mundo dos esportes, atualmente abordando apenas o futebol e o basquete. Nossa loja oficial
+                    oferece todos os acessórios e utensílios necessários para a prática do futebol ou basquete, e também
+                    personalizações do seu gosto.</p>
+            </div>
+            <div>
+                <h2>Serviço de Streaming</h2>
+                <p>Atualmente oferecemos nosso plano de streaming mensal ou anual, para todos os campeonatos de basquete
+                    e futebol, podendo assistir jogos ao vivo e transmissões passadas. <strong>Aqui é transmitido os
+                        maiores campeonatos do mundo</strong> como: NBA; Champions League; Copa do Mundo.
+                </p>
+            </div>
+            <div>
+                <h3>Em breve</h3>
+                <p>Em breve teremos todos os <strong>jogos da olimpíadas</strong> em nossas plataformas digitais. Nosso
+                    <strong>serviço de streaming</strong> será <strong>expandido</strong> para mais 3 esportes (Futsal,
+                    Golf, Vôlei). Nossas <strong>lojas oficiais</strong> serão <strong>expandidas</strong> para a venda
+                    de acessórios e utensílios de 5 esportes (Futsal, Golf, Vôlei, Skate, Ping-Pong). Teremos Anualmente
+                    <strong>campeonatos de vídeo game</strong> (FIFA 23, Rocket League).
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="content">
+            <div class="top">
+                <div class="media-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="link-boxes">
+                <ul class="box">
+                    <li class="link_name">Empresa</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contate-nos</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Sedes</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Serviços</li>
+                    <li><a href="#">Streaming</a></li>
+                    <li><a href="#">Loja oficial</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#">Camisas<br>personalizadas</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Conta</li>
+                    <li><a href="#">Perfil</a></li>
+                    <li><a href="#">Recomend.</a></li>
+                    <li><a href="#">Preferências</a></li>
+                    <li><a href="#">Histórico</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Fundadores</li>
+                    <li><a href="#">M. Stephany</a></li>
+                    <li><a href="#">L. Felipe</a></li>
+                    <li><a href="#">M. Tavares</a></li>
+                    <li><a href="#">V. Mantovani</a></li>
+                </ul>
+            </div>
+            <div class="apps">
+                <ul class="baixem">
+                    <p>Baixem nosso app:<br></p><img src="/img/34-349265_app-store-google-play-svg.png" alt="">
+                </ul>
+
+                <ul class="box input-box">
+                    <li class="link_name">Mande uma<br>mensagem</li><textarea
+                        placeholder="Digite aqui seu elogio ou reclamação" name="" id="" cols="30" rows="10"></textarea>
+                    </li>
+                    <li><input type="button" value="Enviar"></li>
+                </ul>
+
+            </div>
+        </div>
+        </div>
+        <div class="bottom-details">
+            <div class="bottom_text">
+                <span class="copyright_text">Copyright © 2023 World Sports. Todos os direitos
+                    reservados</span>
+                <span class="policy_terms">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos e condições</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        // dropdown menus
+        $(document).ready(function () {
+            //toggle sub-menus
+            $(".sub-btn").click(function () {
+                $(this).next(".sub-menu").slideToggle();
+            });
+
+            //toggle more-menus
+            $(".more-btn").click(function () {
+                $(this).next(".more-menu").slideToggle();
+            });
+        });
+
+        //javascript for the responsive navigation menu
+        var menu = document.querySelector(".menu");
+        var menuBtn = document.querySelector(".menu-btn");
+        var closeBtn = document.querySelector(".close-btn");
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.add("active");
+        });
+
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove("active");
+        });
+
+        //javascript for the navigation bar effects on scroll
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+</body>
+
+</html>

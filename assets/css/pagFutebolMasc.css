@@ -10,64 +10,7 @@ body {
     background-color: #D6D2D2;
 }
 
-/* Start navbar */
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    background-color: #030305;
-}
-
-.menu .links a:hover {
-    color: rgb(167, 167, 167);
-    transition: .3s;
-}
-
-.links a {
-    color: white;
-    text-decoration: none;
-    margin-right: 2rem;
-}
-
-.sideMenu {
-    display: none;
-    visibility: hidden;
-}
-
-.menu.active {
-    right: 0;
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.5s;
-    background-color: #030305;
-    z-index: 999;
-}
-
-.menu {
-    display: flex;
-    align-items: center;
-}
-
-.menu .links a {
-    color: white;
-    margin-bottom: 2rem;
-    margin-top: 30px;
-}
-
-.sideMenu img {
-    position: relative;
-    z-index: 9999;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-}
-
-.logoImg {
-    width: 5%;
-}
-
-/* End */
 
 section {
     display: flex;
@@ -99,70 +42,12 @@ p {
     flex-direction: column;
 }
 
-@media screen and (max-width: 980px) {
-
-    .scroll-top {
-
-        opacity: 0;
-        visibility: hidden;
-
-    }
-
-    .scroll {
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    .scroll-top.active {
-        opacity: 0;
-        visibility: hidden;
-
-    }
-
-    .custom-shape-divider-bottom-1669148177 {
-        z-index: -100;
-    }
-
-    /** For mobile devices **/
-    .custom-shape-divider-bottom-1669148177 svg {
-        width: calc(100% + 1.3px);
-        height: 61px;
-        z-index: -100;
-    }
-
-    .sideMenu {
-        display: initial;
-        visibility: visible;
-        position: fixed;
-        right: 20px;
-        z-index: 1000;
-    }
-
-    .links {
-        margin: 2rem 0;
-    }
-
-    .links a {
-        margin-right: 0;
-    }
-
-    .menu {
-        flex-direction: column;
-        position: fixed;
-        top: 0;
-        right: -1000px;
-        height: 100vh;
-        background-color: #030305;
-        width: 15rem;
-        padding: 2rem;
-        transition: all 2s;
-    }
-
-    .menu .links,
-    .menu .buttons {
-        display: flex;
-        flex-direction: column;
+@media (max-width: 900px) {
+    section {
         width: 100%;
-        align-items: center;
+    }
+
+    .noticias {
+        width: 100%;
     }
 }
