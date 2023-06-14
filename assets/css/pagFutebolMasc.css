@@ -6,21 +6,17 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    background-color: #D6D2D2;
-}
 
-
-
-section {
+.container-noticias {
     display: flex;
     justify-items: center;
     justify-content: center;
-    margin: 5%;
     flex-direction: column;
     align-items: center;
-    
 }
+
+
+
 
 .imgNoticias {
     width: 100%;
@@ -31,8 +27,8 @@ section {
     display: grid;
     gap: 5px;
     margin-top: 10px;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(5,auto);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
     font-size: 10px;
     border-bottom: 1px solid black;
 }
@@ -42,14 +38,107 @@ p {
     flex-direction: column;
 }
 
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 50vh;
+    width: 100%;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.slide.atual {
+    opacity: 1;
+}
+
+.slide .content {
+    position: absolute;
+    bottom: 70px;
+    left: -600px;
+    opacity: 0;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 35px;
+}
+
+.slide .content h1 {
+    margin-bottom: 10px;
+}
+
+.slide.atual .content {
+    opacity: 1;
+    transform: translateX(600px);
+    transition: all 0.7s ease-in-out 0.3s;
+}
+
+.buttons button#next {
+    position: absolute;
+    top: 40%;
+    right: 15px;
+}
+
+.buttons button#prev {
+    position: absolute;
+    top: 40%;
+    left: 15px;
+}
+
+.buttons button {
+    font-size: 2rem;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 50%;
+    outline: none;
+}
+
+.buttons button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.slide:first-child {
+    background: url('../imgs/noticia1.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(2) {
+    background: url('../img/filme-2.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(3) {
+    background: url('../img/filme-3.jpg') no-repeat center top/cover;
+}
+
+
+
 @media (max-width: 900px) {
-    section {
+    .container-noticias {
         margin: 1%;
-        width: 100%;
+        width: 80%;
     }
 
     .noticias {
         width: 80%;
     }
 
+    .slide .content {
+        bottom: -300px;
+        left: 0;
+        width: 100%;
+    }
+
+    .slide.atual .content {
+        transform: translateY(-300px);
+    }
 }
