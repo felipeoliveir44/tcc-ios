@@ -81,25 +81,25 @@ p {
 }
 
 .buttons button#next {
+    background-color: #000;
     position: absolute;
     top: 40%;
-    right: 15px;
+    right: 0px;
 }
 
 .buttons button#prev {
+    background-color: #000;
     position: absolute;
     top: 40%;
-    left: 15px;
+    left: 0px;
 }
 
 .buttons button {
     font-size: 2rem;
-    border: 2px solid #fff;
     background-color: transparent;
     color: #fff;
     cursor: pointer;
     padding: 13px 15px;
-    border-radius: 50%;
     outline: none;
 }
 
@@ -109,15 +109,19 @@ p {
 }
 
 .slide:first-child {
-    background: url('../imgs/noticia1.jpg') no-repeat center top/cover;
+    background: url('../imgs/noticias/noticia1.jpg') no-repeat;
+    background-size: cover;
+    
 }
 
 .slide:nth-child(2) {
-    background: url('../img/filme-2.jpg') no-repeat center top/cover;
+    background: url('../imgs/noticias/noticia2.jpg') no-repeat;
+    background-size: cover;
 }
 
 .slide:nth-child(3) {
-    background: url('../img/filme-3.jpg') no-repeat center top/cover;
+    background: url('../img/filme-3.jpg') no-repeat;
+
 }
 
 
