@@ -1,0 +1,21 @@
+.sobre {
+    max-width: 1250px;
+    margin: auto;
+    padding: 50px 40px 25px 40px;
+}
+.sobre_conteudo {
+    background-color: #fff;
+}
+.sobre div{
+    padding-bottom: 25px;
+}
+.sobre div h1, h2, h3{
+    font-size: 1.5rem;
+}
+.sobre div p{
+    font-size: 0.9rem;
+}
+
+.sobre div p strong{
+    color: #000000;
+}

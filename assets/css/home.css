@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.assuntos-principais { 
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../imgs/home/quadra\ de\ basquete-futebol.jpg'); 
+}
+
