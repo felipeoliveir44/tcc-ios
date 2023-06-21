@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/pagFutebolMasc.css">
+    <link rel="stylesheet" href="./assets/css/pagBasqueteMasc.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/dark_mode_and_search.css">
@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script async src="https://basicons.xyz/embed.js"> </script>
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
@@ -42,7 +44,7 @@
                         <li class="menu-item menu-item-has-children">
                             <a href="#" data-toggle="sub-menu">Noticias <i class="plus"></i></a>
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="pagBasqueteMasc.html">Futebol</a>
+                                <li class="menu-item"><a href="">Futebol</a>
                                 </li>
                                 <li class="menu-item"><a href="pagBasqueteMasc.html">Basquete</a>
                                 </li>
@@ -130,77 +132,157 @@
 
     <main>
         <section class="container-slider">
-            <div class="slider">
-                <div class="slide atual">
-                    <div class="content">
-                        <h1>Slide Um</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Necessitatibus quaerat quidem beatae alias
-                            ducimus hic officia velit illum dolores omnis.</p>
-                    </div>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="./assets/imgs/noticias/basquete/noticia1.jpg" alt="Imagem 1" style="width:100%">
+                    <div class="caption">Pinheiros vence o Mogi das Cruzes e mantém 100% de aproveitamento na LDB</div>
                 </div>
-                <div class="slide">
-                    <div class="content">
-                        <h1>Slide Dois</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-                            officiis repellendus facilis odio
-                            quos quas amet labore voluptas nihil ipsam.</p>
-                    </div>
+
+                <div class="mySlides fade">
+                    <img src="./assets/imgs/noticias/basquete/noticia2.jpg" alt="Imagem 2" style="width:100%">
+                    <div class="caption">Caption Text 2</div>
                 </div>
-                <div class="slide">
-                    <div class="content">
-                        <h1>Slide Três</h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
-                            alias aut excepturi id
-                            reprehenderit vero a odit dolor quia laudantium.</p>
-                    </div>
+
+                <div class="mySlides fade">
+                    <img src="./assets/imgs/noticias/basquete/noticia3.jpg" alt="Imagem 3" style="width:100%">
+                    <div class="caption">Caption Text 3</div>
                 </div>
-                <div class="buttons">
-                    <button id="prev"><i class="fas fa-arrow-left"></i></button>
-                    <button id="next"><i class="fas fa-arrow-right"></i></button>
-                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
+
+            <!-- The dots/circles -->
+            <div class="dot-container" style="text-align:center"></div>
 
         </section>
+        <section class="section-noticias">
+            <div class="container-noticias">
 
-        <section class="container-noticias">
-            <div class="noticias">
-                <div class="divImg">
-                    <img src="./assets/imgs/noticias/noticia1.jpg" alt="" class="imgNoticias">
+                <div class="p-cards">
+                    <div class="p-content-cards">
+                        <div class="p-header_projeto">
+                            <img src="./assets/imgs/noticias/basquete/noticia1.jpg" alt="">
+                        </div>
+                        <div class="p-body_projeto">
+                            <p class="titulos">Pinheiros vence o Mogi das Cruzes e mantém 100% de aproveitamento na LDB
+                            </p>
+                            <p class="textos">Atuais campeões batem os donos da casa por 96 a 66 e somam a terceira
+                                vitória consecutiva no torneio sub-22; rodada tem ainda vitórias de Bauru e São José.
+                            </p>
+                            <p class="textos data"><i data-feather="clock"></i>16 de jun. de 2023</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="divTextos">
-                    <h1>Chapecoense x Sampaio Corrêa encerram rodada; siga</h1>
-                    <p>Torcida da Chape vaia jogadores na saída do time para o vestiário.</p>
+
+                <div class="p-cards">
+                    <div class="p-content-cards">
+                        <div class="p-header_projeto">
+                            <img src="./assets/imgs/noticias/basquete/noticia2.jpg" alt="">
+                        </div>
+                        <div class="p-body_projeto">
+                            <p class="titulos">Santiago Scala renova contrato e disputará 3ª temporada pelo Franca
+                            </p>
+                            <p class="textos">"Sniper argentino" permanece mais um ano com atual bicampeão do NBB.</p>
+                            <p class="textos data"><i data-feather="clock"></i>16 de jun. de 2023</p>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="p-cards">
+                    <div class="p-content-cards">
+                        <div class="p-header_projeto">
+                            <img src="./assets/imgs/noticias/basquete/noticia3.jpg" alt="">
+                        </div>
+                        <div class="p-body_projeto">
+                            <p class="titulos">NBA anuncia suspensão de 25 jogos para Ja Morant, do Memphis Grizzlies,
+                                por conduta prejudicial á liga</p>
+                            <p class="textos">Morant promete 'trabalhar a saúde mental' após punição da NBA.</p>
+                            <p class="textos data"><i data-feather="clock"></i>16 de jun. de 2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-cards">
+                    <div class="p-content-cards">
+                        <div class="p-header_projeto">
+                            <img src="./assets/imgs/noticias/basquete/noticia1.jpg" alt="">
+                        </div>
+                        <div class="p-body_projeto">
+                            <p class="titulos">Pinheiros vence o Mogi das Cruzes e mantém 100% de aproveitamento na LDB
+                            </p>
+                            <p class="textos">Atuais campeões batem os donos da casa por 96 a 66 e somam a terceira
+                                vitória consecutiva no torneio sub-22; rodada tem ainda vitórias de Bauru e São José.
+                            </p>
+                            <p class="textos data"><i data-feather="clock"></i>16 de jun. de 2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-cards">
+                    <div class="p-content-cards">
+                        <div class="p-header_projeto">
+                            <img src="./assets/imgs/noticias/basquete/noticia2.jpg" alt="">
+                        </div>
+                        <div class="p-body_projeto">
+                            <p class="titulos">Santiago Scala renova contrato e disputará 3ª temporada pelo Franca
+                            </p>
+                            <p class="textos">"Sniper argentino" permanece mais um ano com atual bicampeão do NBB.</p>
+                            <p class="textos data"><i data-feather="clock"></i>16 de jun. de 2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-cards">
+                    <div class="p-content-cards">
+                        <div class="p-header_projeto">
+                            <img src="./assets/imgs/noticias/basquete/noticia3.jpg" alt="">
+                        </div>
+                        <div class="p-body_projeto">
+                            <p class="titulos">NBA anuncia suspensão de 25 jogos para Ja Morant, do Memphis Grizzlies,
+                                por conduta prejudicial á liga</p>
+                            <p class="textos">Morant promete 'trabalhar a saúde mental' após punição da NBA.</p>
+                            <p class="textos data"><i data-feather="clock"></i>16 de jun. de 2023</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="noticias">
-                <div class="divImg">
-                    <img src="./assets/imgs/noticias/noticia2.jpg" alt="" class="imgNoticias">
-                </div>
-                <div class="divTextos">
-                    <h1>Chapecoense x Sampaio Corrêa encerram rodada; siga</h1>
-                    <p>Torcida da Chape vaia jogadores na saída do time para o vestiário.</p>
-                </div>
-            </div>
+            <div class="agenda">
+                <div class="container-agenda">
+                    <p>Agenda do dia</p>
+                    <hr>
+                    <div class="jogos">
+                        <img src="./assets/imgs/Design sem nome.png" alt="">
+                        <span>X</span>
+                        <img src="./assets/imgs/Design sem nome.png" alt="">
+                    </div>
 
-            <div class="noticias">
-                <div class="divImg">
-                    <img src="./assets/imgs/noticias/noticia2.jpg" alt="" class="imgNoticias">
-                </div>
-                <div class="divTextos">
-                    <h1>Chapecoense x Sampaio Corrêa encerram rodada; siga</h1>
-                    <p>Torcida da Chape vaia jogadores na saída do time para o vestiário.</p>
-                </div>
-            </div>
+                    <div class="jogos">
+                        <img src="./assets/imgs/Design sem nome.png" alt="">
+                        <span>X</span>
+                        <img src="./assets/imgs/Design sem nome.png" alt="">
+                    </div>
 
-            <div class="noticias">
-                <div class="divImg">
-                    <img src="./assets/imgs/noticias/noticia2.jpg" alt="" class="imgNoticias">
-                </div>
-                <div class="divTextos">
-                    <h1>Chapecoense x Sampaio Corrêa encerram rodada; siga</h1>
-                    <p>Torcida da Chape vaia jogadores na saída do time para o vestiário.</p>
+                    <div class="jogos">
+                        <img src="./assets/imgs/Design sem nome.png" alt="">
+                        <span>X</span>
+                        <img src="./assets/imgs/Design sem nome.png" alt="">
+                    </div>
+
+                    <div class="jogos">
+                        <img src="./assets/imgs/Design sem nome.png" alt="">
+                        <span>X</span>
+                        <img src="./assets/imgs/Design sem nome.png" alt="">
+                    </div>
+
+                    <div class="jogos">
+                        <img src="./assets/imgs/Design sem nome.png" alt="">
+                        <span>X</span>
+                        <img src="./assets/imgs/Design sem nome.png" alt="">
+                    </div>
                 </div>
             </div>
         </section>
