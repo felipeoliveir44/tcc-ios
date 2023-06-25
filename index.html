@@ -13,7 +13,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512- lEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==
 " crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>TCC - IOS</title>
+    <!-- Jquery-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="./assets/js/notify.min.js"></script>
+    <title>World Sports: O Epicentro do Futebol e Basquete - Explore o Universo dos Esportes Mais Apaixonantes</title>
 </head>
 
 <body>
@@ -24,7 +28,7 @@
             <div class="container">
                 <div class="header-main">
                     <div class="logo">
-                        <a href="#"><img src="./assets/imgs/header/logo.jfif" alt=""></a>
+                        <a href="#"><img src="./assets/imgs/header/logo.jpeg" alt=""></a>
                     </div>
                     <div class="open-nav-menu">
                         <span></span>
@@ -44,7 +48,7 @@
                             <li class="menu-item menu-item-has-children">
                                 <a href="#" data-toggle="sub-menu">Noticias <i class="plus"></i></a>
                                 <ul class="sub-menu">
-                                    <li class="menu-item"><a href="pagBasqueteMasc.html">Futebol</a>
+                                    <li class="menu-item"><a href="pagFutebolMasc.html">Futebol</a>
                                     </li>
                                     <li class="menu-item"><a href="pagBasqueteMasc.html">Basquete</a>
                                     </li>
@@ -54,7 +58,7 @@
                                 <a href="sobre.html">Sobre nós</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#">Assinaturas</a>
+                                <a href="assinaturas.html">Assinaturas</a>
                             </li>
                         </ul>
                     </nav>
@@ -65,7 +69,7 @@
 
         <!-- inicio do dark_mode_and_search-->
 
-        <div class="light-dark_search_background">
+        <!-- <div class="light-dark_search_background">
             <div class="content_light-dark_search">
                 <div class="light-dark">
                     <input type="checkbox" id="darkmode-toggle">
@@ -135,7 +139,7 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
         <!--Fim do dark_mode_and_search-->
 
 
@@ -199,7 +203,7 @@
 
             <div class="box1">
                 <div class="box_cont1">
-                    Word-Sports tem o orgulho de doar nossos lucros para apoiar várias instituições.
+                    World Sports tem o orgulho de doar nossos lucros para apoiar várias instituições.
                     <p>Aqui estão algumas das organizações que ajudamos a financiar</p>
                 </div>
             </div>
@@ -230,22 +234,31 @@
                 </div>
             </div>
 
-            <h1>Formulário de Inscrição</h1>
+            <h1>Cadastro</h1>
 
             <form id="formulario">
-                <label for="nome">Nome:</label> <br>
-                <input type="text" id="nome" required><br>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
 
-                <label for="Sobrenome">Sobrenome:</label> <br>
-                <input type="text" id="Sobrenome" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
 
-                <label for="dataNasc">Data de Nascimento:</label> <br>
-                <input type="text" id="dataNasc" placeholder="dd/mm/aaaa" required><br>
+                <label for="dataNasc">Data de Nascimento:</label>
+                <input type="date" id="dataNasc" placeholder="dd/mm/aaaa" required>
+                
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" required>
+                <div class="requirementos">
+                    <p>* Oito caracteres<br>
+                        * Um caracter especial <br>
+                        * Um número <br>
+                        * Uma letra maiúscula</p>
+                </div>
+                <button class="btn-enviar" id="btn-enviar" type="button" onclick="realizarCadastro()">Enviar</button>
 
-                <label for="email">Email:</label> <br>
-                <input type="email" id="email" required><br>
+            </form>
 
-                <button class="btn-enviar" type="button" onclick="incluirInscrito()">Enviar</button>
+            <!--- fim do home-->
 
             </form>
             <footer>
@@ -259,86 +272,51 @@
                             <a href="#"><i class="fab fa-youtube"></i></a>
                         </div>
                     </div>
+                    <div class="link-boxes">
+                        <ul class="box">
+                            <li class="link_name">Empresa</li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Contate-nos</a></li>
+                            <li><a href="#">Sobre nós</a></li>
+                            <li><a href="#">Sedes</a></li>
+                        </ul>
+                        <ul class="box">
+                            <li class="link_name">Serviços</li>
+                            <li><a href="#">Streaming</a></li>
+                            <li><a href="#">Loja oficial</a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#">Camisas<br>personalizadas</a></li>
+                        </ul>
+                        <ul class="box">
+                            <li class="link_name">Conta</li>
+                            <li><a href="#">Perfil</a></li>
+                            <li><a href="#">Recomend.</a></li>
+                            <li><a href="#">Preferências</a></li>
+                            <li><a href="#">Histórico</a></li>
+                        </ul>
+                        <ul class="box">
+                            <li class="link_name">Fundadores</li>
+                            <li><a href="#">M. Stephany</a></li>
+                            <li><a href="#">L. Felipe</a></li>
+                            <li><a href="#">M. Tavares</a></li>
+                            <li><a href="#">V. Mantovani</a></li>
+                        </ul>
+                    </div>
+                    <div class="apps">
+                        <ul class="baixem">
+                            <p>Baixem nosso app:<br></p><img src="./assets/imgs/icons/apps.png" alt="">
+                        </ul>
 
-                    <h1>Formulário de Inscrição</h1>
+                        <ul class="box input-box">
+                            <li class="link_name">Mande uma<br>mensagem</li><textarea
+                                placeholder="Digite aqui seu elogio ou reclamação" name="" id="" cols="30"
+                                rows="10"></textarea>
+                            </li>
+                            <li><input type="button" value="Enviar"></li>
+                        </ul>
 
-                    <form id="formulario">
-                        <label for="nome">Nome:</label> <br>
-                        <input type="text" id="nome" required><br>
-
-                        <label for="Sobrenome">Sobrenome:</label> <br>
-                        <input type="text" id="Sobrenome" required><br>
-
-                        <label for="dataNasc">Data de Nascimento:</label> <br>
-                        <input type="text" id="dataNasc" placeholder="dd/mm/aaaa" required><br>
-
-                        <label for="email">Email:</label> <br>
-                        <input type="email" id="email" required><br>
-
-                        <button class="btn-enviar" type="button" onclick="incluirInscrito()">Enviar</button>
-
-                    </form>
-
-                    <!--- fim do home-->
-
-                    </form>
-                    <footer>
-                        <div class="content">
-                            <div class="top">
-                                <div class="media-icons">
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="#"><i class="fab fa-youtube"></i></a>
-                                </div>
-                            </div>
-                            <div class="link-boxes">
-                                <ul class="box">
-                                    <li class="link_name">Empresa</li>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Contate-nos</a></li>
-                                    <li><a href="#">Sobre nós</a></li>
-                                    <li><a href="#">Sedes</a></li>
-                                </ul>
-                                <ul class="box">
-                                    <li class="link_name">Serviços</li>
-                                    <li><a href="#">Streaming</a></li>
-                                    <li><a href="#">Loja oficial</a></li>
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#">Camisas<br>personalizadas</a></li>
-                                </ul>
-                                <ul class="box">
-                                    <li class="link_name">Conta</li>
-                                    <li><a href="#">Perfil</a></li>
-                                    <li><a href="#">Recomend.</a></li>
-                                    <li><a href="#">Preferências</a></li>
-                                    <li><a href="#">Histórico</a></li>
-                                </ul>
-                                <ul class="box">
-                                    <li class="link_name">Fundadores</li>
-                                    <li><a href="#">M. Stephany</a></li>
-                                    <li><a href="#">L. Felipe</a></li>
-                                    <li><a href="#">M. Tavares</a></li>
-                                    <li><a href="#">V. Mantovani</a></li>
-                                </ul>
-                            </div>
-                            <div class="apps">
-                                <ul class="baixem">
-                                    <p>Baixem nosso app:<br></p><img
-                                        src="./assets/imgs/34-349265_app-store-google-play-svg.png" alt="">
-                                </ul>
-
-                                <ul class="box input-box">
-                                    <li class="link_name">Mande uma<br>mensagem</li><textarea
-                                        placeholder="Digite aqui seu elogio ou reclamação" name="" id="" cols="30"
-                                        rows="10"></textarea>
-                                    </li>
-                                    <li><input type="button" value="Enviar"></li>
-                                </ul>
-
-                            </div>
-                        </div>
+                    </div>
+                </div>
                 </div>
                 <div class="bottom-details">
                     <div class="bottom_text">
