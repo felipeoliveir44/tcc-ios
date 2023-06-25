@@ -6,6 +6,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.feather {
+    stroke: #fff;
+}
+
 /* Slides */
 
 .slideshow-container {
@@ -71,14 +75,11 @@
     right: 10px;
 }
 
-
-
-
 /* End slides */
 
 /* Noticias */
 
-.section-noticias {
+.section-principal {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
@@ -93,45 +94,59 @@
     width: 100%;
 }
 
-.feather {
-    stroke: #fff;
-}
 
-.container-noticias {
+.container-principal {
+    max-width: 1200px;
     margin: 30px;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    grid-template-areas: "card1 card1 card2"
+        "card1 card1 card3"
+        "novasNoticias card4 card5"
+        "novasNoticias card6 card7";
 }
 
-.noticias {
-    width: 700px;
-    display: grid;
-    gap: 5px;
-    margin-top: 10px;
-    font-size: 10px;
-    border-bottom: 1px solid black;
+.card1 {
+    grid-area: card1;
 }
+
+.card2 {
+    grid-area: card2;
+}
+
+.card3 {
+    grid-area: card3;
+}
+
+.novasNoticias {
+    grid-area: novasNoticias;
+}
+
+.card4 {
+    grid-area: card4;
+}
+
+.card5 {
+    grid-area: card5;
+}
+
+.card6 {
+    grid-area: card6;
+}
+
+.card7 {
+    grid-area: card7;
+}
+
+
 
 
 .p-cards {
     background-color: #171717;
-    max-width: 400px;
-    max-height: 400px;
     border: 1px solid black;
-    border-radius: 10px;
-}
-
-.textos {
-    color: #CCCCCC;
-    font-size: 1em;
-}
-
-.titulosNoticias {
     color: #fff;
-    font-size: 1em;
 }
-
 
 .p-header_projeto img {
     width: 100%;
@@ -153,58 +168,36 @@
 }
 
 .data {
+    color: #CCCCCC;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
 }
 
+.titulosNoticias {
+    color: #fff;
+    font-size: 1.5em;
+}
 
-
-/* end */
-
-.container-agenda {
-    max-width: 400px;
-    max-height: 400px;
+.container-novasNoticias {
     color: white;
-    border: 1px solid #fff;
+    border: 1px solid #000;
     padding: 10px;
     overflow: auto;
     background-color: #171717;
 }
 
-.container-agenda p {
-    text-align: center;
+.container-novasNoticias h2 {
+    font-size: 2em;
+    padding-bottom: 10px;
 }
-.jogos {
+
+.ultimasNoticias {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 10px;
-    border-bottom: 1px solid #fff;
-    
-}
-.jogos img {
-    width: 30px;
-}
-
-.container-agenda::-webkit-scrollbar {
-    width: 12px;
-    /* width of the entire scrollbar */
-}
-
-
-.container-agenda::-webkit-scrollbar-track {
-    background: #000000;
-    /* color of the tracking area */
-}
-
-.container-agenda::-webkit-scrollbar-thumb {
-    background-color: #272727;
-    /* color of the scroll thumb */
-    border-radius: 20px;
-    /* roundness of the scroll thumb */
-    /* creates padding around scroll thumb */
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 10px;
 }
 
 /* End noticias*/
@@ -215,6 +208,8 @@
     font-size: 2rem;
     color: #fff;
 }
+
+
 .section-videos {
     display: flex;
     justify-items: center;
@@ -225,10 +220,10 @@
     font-size: 13px;
 }
 
+
 .container-videos {
+    max-width: 1200px;
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
     color: #fff;
     margin: 30px;
     gap: 30px;
@@ -236,39 +231,206 @@
 
 
 .videos {
-    width: 40vw;
-    background-color: #171717;
     display: grid;
-    grid-template-columns: auto auto;
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "div1 div1 div1 div1"
+        "div2 div3 div4 div5"
+        "div6 div7 div8 div9";
+
 }
 
-/* .video1 {
-    grid-area: video1;
+video {
+    width: 100%;
+    height: 100%;
 }
 
-.video2 {
-    grid-area: video2;
+.div1:nth-child(1) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #171717;
+    grid-area: div1;
 }
 
-.video3 {
-    grid-area: video3;
+.videosTextos:nth-child(1) {
+    grid-row: 1;
 }
 
-.video4 {
-    grid-area: video4;
+.div2 {
+    background-color: #171717;
+    grid-area: div2;
 }
 
-.video5 {
-    grid-area: video5;
+.div3 {
+    background-color: #171717;
+    grid-area: div3;
+}
+
+.div4 {
+    background-color: #171717;
+    grid-area: div4;
+}
+
+.div5 {
+    background-color: #171717;
+    grid-area: div5;
+}
+
+.div6 {
+    background-color: #171717;
+    grid-area: div6;
+}
+
+.div7 {
+    background-color: #171717;
+    grid-area: div7;
+}
+
+.div8 {
+    background-color: #171717;
+    grid-area: div8;
+}
+
+.div9 {
+    background-color: #171717;
+    grid-area: div9;
+}
+
+
+/* .videosCards {
+    grid-row: 1;
 } */
 
+.div1,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.div7,
+.div8,
+.div9 {
+    border: 1px solid #000;
+}
 
+.mais-conteudo {
+    display: none;
+}
 
-@media (max-width: 900px) {
+#btn-vermais {
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    font-size: 1.5em;
+    background-color: transparent;
+    border: 1px solid red;
+    cursor: pointer;
+}
 
-    .container-noticias {
-        grid-template-columns: auto;
+.videosTextos {
+    padding: 30px;
+}
+
+.videosTextos h3 {
+    font-size: 2em;
+}
+
+.videosTextos p {
+    font-size: 1em;
+}
+
+/* End videos */
+
+/* Start noticias feminino */
+.section-noticiasBascFeminino {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0F0F0F;
+    font-size: 13px;
+}
+
+.container-noticiasBascFeminino {
+    max-width: 1200px;
+    margin: 30px;
+    display: grid;
+    gap: 30px;
+    /* grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    grid-template-areas: 
+        "noticiasBasc1 noticiasBasc1 noticiasBasc2"
+        "noticiasBasc1 noticiasBasc1 noticiasBasc3"
+        "noticiasBasc4 noticiasBasc5 noticiasBasc6"; */
+}
+.noticias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    grid-template-areas: 
+        "noticiasBasc1 noticiasBasc1 noticiasBasc2"
+        "noticiasBasc1 noticiasBasc1 noticiasBasc3"
+        "noticiasBasc4 noticiasBasc5 noticiasBasc6";
+}
+
+.noticiasBasc1 {
+    grid-area: noticiasBasc1;
+}
+
+.noticiasBasc2 {
+    grid-area: noticiasBasc2;
+}
+
+.noticiasBasc3 {
+    grid-area: noticiasBasc3;
+}
+
+.noticiasBasc4 {
+    grid-area: noticiasBasc4;
+}
+
+.noticiasBasc5 {
+    grid-area: noticiasBasc5;
+}
+
+.noticiasBasc6 {
+    grid-area: noticiasBasc6;
+}
+
+/* End basquete feminino */
+
+/* Start basquete masculino */
+.section-noticiasBascMasculino {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0F0F0F;
+    font-size: 13px;
+}
+
+.container-noticiasBascMasculino {
+    max-width: 1200px;
+    margin: 30px;
+    display: grid;
+    gap: 30px;
+    /* grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    grid-template-areas: 
+        "noticiasBasc1 noticiasBasc1 noticiasBasc2"
+        "noticiasBasc1 noticiasBasc1 noticiasBasc3"
+        "noticiasBasc4 noticiasBasc5 noticiasBasc6"; */
+}
+@media (max-width: 1250px) {
+    .videos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "div1 div1""div2 div3""div4 div5""div6 div7""div8 div9";
     }
 
     .slide .content {
@@ -279,5 +441,12 @@
 
     .slide.atual .content {
         transform: translateY(-300px);
+    }
+}
+
+@media (max-width: 700px) {
+    .videos {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "div1""div2""div3""div4""div5""div6""div7""div8""div9";
     }
 }
