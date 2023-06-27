@@ -88,7 +88,14 @@
     align-items: center;
     background-color: #0F0F0F;
     font-size: 13px;
+    color: #fff;
 }
+
+h1 {
+    grid-area: titulo;
+    font-size: 2em;
+}
+
 
 .imgNoticias {
     width: 100%;
@@ -101,7 +108,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    grid-template-areas: "card1 card1 card2"
+    grid-template-areas:
+        "titulo titulo titulo"
+        "card1 card1 card2"
         "card1 card1 card3"
         "novasNoticias card4 card5"
         "novasNoticias card6 card7";
@@ -442,7 +451,8 @@ video {
 
     .container-principal {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
+        grid-template-areas:
+            "titulo titulo"
             "card1 card1"
             "card2 card3"
             "card4 card5"
@@ -451,20 +461,23 @@ video {
     }
 
     .noticias {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
             "noticiasBasc1 noticiasBasc1"
             "noticiasBasc2 noticiasBasc3"
             "noticiasBasc4 noticiasBasc5"
             "noticiasBasc6 noticiasBasc6";
     }
+
     .div1:nth-child(1) {
         height: auto;
         grid-template-columns: auto;
     }
+
     .videosTextos {
         grid-row: 2;
     }
+
     .slide .content {
         bottom: -300px;
         left: 0;
@@ -480,6 +493,7 @@ video {
     .container-novasNoticias {
         height: 400px;
     }
+
     .videos {
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas: "div1""div2""div3""div4""div5""div6""div7""div8""div9";
@@ -487,7 +501,8 @@ video {
 
     .container-principal {
         grid-template-columns: auto;
-        grid-template-areas: 
+        grid-template-areas:
+            "titulo titulo"
             "card1 card1"
             "card2 card2"
             "card3 card3"
