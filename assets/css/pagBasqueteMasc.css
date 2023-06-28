@@ -148,15 +148,17 @@ h1 {
     grid-area: card7;
 }
 
-
-
-
 .p-cards {
     background-color: #171717;
     border: 1px solid black;
     color: #fff;
 }
 
+
+.p-cards:hover {
+    border: 1px solid #F77F00;
+    transition: .5s ease-in-out;
+}
 .p-header_projeto img {
     width: 100%;
     background-color: #C4C4C4;
@@ -195,6 +197,11 @@ h1 {
     padding: 10px;
     overflow: auto;
     background-color: #171717;
+}
+
+.container-novasNoticias:hover {
+    border: 1px solid #F77F00;
+    transition: .5s ease-in-out;
 }
 
 .container-novasNoticias h2 {
@@ -326,6 +333,21 @@ video {
     border: 1px solid #000;
 }
 
+.div1:hover,
+.div2:hover,
+.div3:hover,
+.div4:hover,
+.div5:hover,
+.div6:hover,
+.div7:hover,
+.div8:hover,
+.div9:hover {
+    border: 1px solid #F77F00;
+    transition: .5s ease-in-out;
+}
+
+    
+
 .mais-conteudo {
     display: none;
 }
@@ -336,7 +358,7 @@ video {
     color: #fff;
     font-size: 1.5em;
     background-color: transparent;
-    border: 1px solid red;
+    border: 1px solid #F77F00;
     cursor: pointer;
 }
 

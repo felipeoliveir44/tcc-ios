@@ -45,7 +45,7 @@ a {
 }
 
 .header-main {
-    background: #23252B;
+    background: #0F0F0F;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -112,7 +112,7 @@ a {
 
 .header .menu>.menu-item:hover>a .plus:before,
 .header .menu>.menu-item:hover>a .plus:after {
-    background-color: #e91e63;
+    background-color: #F77F00;
 }
 
 .header .menu>.menu-item>a .plus:after {
@@ -121,7 +121,7 @@ a {
 
 .header .menu>.menu-item>.sub-menu>.menu-item>a:hover,
 .header .menu>.menu-item:hover>a {
-    color: #e91e63;
+    color: #F77F00;
 }
 
 .header .menu>.menu-item>.sub-menu {
@@ -130,9 +130,9 @@ a {
     position: absolute;
     left: 0;
     top: 100%;
-    background-color: #ffffff;
+    background-color: #171717;
     padding: 10px 0;
-    border-top: 3px solid #e91e63;
+    border-top: 3px solid #F77F00;
     transform: translateY(10px);
     transition: all 0.3s ease;
     opacity: 0;
@@ -163,7 +163,7 @@ a {
     padding: 10px 20px;
     font-size: 16px;
     font-weight: 600;
-    color: #000000;
+    color: #fff;
     transition: all 0.3s ease;
     text-transform: capitalize;
 }
