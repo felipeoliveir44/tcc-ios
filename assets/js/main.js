@@ -1,31 +1,15 @@
 feather.replace();
 
-let slideIndex = 1;
-showSlides(slideIndex);
+window.addEventListener('scroll', function() {
+  let scroll = document.querySelector('.scroll-top');
+  scroll.classList.toggle('active', window.scrollY > 450);
+});
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function backTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+
 }
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-
-/* Icon feather */
 

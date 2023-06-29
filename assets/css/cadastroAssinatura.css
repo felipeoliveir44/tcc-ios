@@ -5,6 +5,35 @@ body {
     color: #000000;
     padding: 0;
 }
+/* Scroll voltar para inicio */
+.scroll-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  background-color: #F77F00;
+  position: fixed;
+  right: 1px;
+  bottom: 1px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+  transition: all .4s ease;
+  border: 1px;
+  cursor: pointer;
+}
+.scroll {
+  padding: 0;
+  color: white;
+}
+
+.scroll-top.active {
+  opacity: 1;
+  visibility: visible;
+
+}
+/* End*/ 
 
 .conteudo{
     display: flex;

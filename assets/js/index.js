@@ -1,3 +1,4 @@
+feather.replace();
 let cadastrados = [];
 
 $('#btn-enviar').click(function () {

@@ -1,3 +1,5 @@
+
+
 const btnVerMais = document.getElementById("btn-vermais");
 const conteudoAdicional = document.getElementsByClassName("mais-conteudo");
 
