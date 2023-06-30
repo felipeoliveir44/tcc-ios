@@ -47,7 +47,7 @@ a {
 .header-main {
     background: #0F0F0F;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 10px 0;
 }
@@ -140,7 +140,14 @@ a {
     z-index: 1;
 }
 
+.form-login {
+    margin: 10px;
+}
 
+.menu-login {
+    gap: 10px;
+    display: flex;
+}
 
 @media(min-width: 1050px) {
     .header .menu>.menu-item-has-children:hover>.sub-menu {

@@ -62,8 +62,20 @@
                                 <a href="assinaturas.html">Assinaturas</a>
                             </li>
 
-                            <li class="menu-item">
-                                <i data-feather="user"></i>
+                            <li class="menu-item menu-item-has-children menu-login">
+                                <a href="#" data-toggle="sub-menu">Login<i data-feather="user"></i></a>
+                                <ul class="sub-menu">
+                                    <div class="container-login">
+                                        <form class="form-login">
+                                            <label for="nome">Email:</label>
+                                            <input type="text" id="nomeLogin" required>
+                                            <label for="senha">Senha:</label>
+                                            <input type="password" id="senhaLogin" required>
+                                            <button class="btn-enviar" id="btn-login" type="button">Login</button>
+                                        </form>
+                                    </div>
+                                </ul>
+                                
                             </li>
                         </ul>
                     </nav>
@@ -183,9 +195,11 @@
                         * Um número <br>
                         * Uma letra maiúscula</p>
                 </div>
-                <button class="btn-enviar" id="btn-enviar" type="button" onclick="realizarCadastro()">Enviar</button>
+                <button class="btn-enviar" id="btn-enviar" type="button">Enviar</button>
 
             </form>
+
+            
 
             <!--- fim do home-->
 

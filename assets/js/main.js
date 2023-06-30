@@ -1,4 +1,4 @@
-feather.replace();
+
 
 window.addEventListener('scroll', function() {
   let scroll = document.querySelector('.scroll-top');
@@ -13,3 +13,4 @@ function backTop() {
 
 }
 
+feather.replace();

@@ -129,7 +129,7 @@ h2 {
     text-align: center;
 }
 
-form {
+#formulario {
     margin: 20px auto;
     width: 300px;
     padding: 10px;
@@ -156,7 +156,7 @@ input[type="date"] {
     display: block;
     margin-top: 10px;
     padding: 5px 10px;
-    background-color: #007bff;
+    background-color: #F77F00;
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -164,7 +164,7 @@ input[type="date"] {
 }
 
 .btn-enviar:hover {
-    background-color: #0056b3;
+    background-color: #D66F00;
 }
 
 .slider .slide {
