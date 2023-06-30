@@ -40,7 +40,6 @@ body {
     position: relative;
     text-align: center;
     font-size: 60px;
-    padding: 50px;
 }
 
 section {
@@ -75,7 +74,6 @@ article img {
 
 .video-bg video {
     width: 100%;
-    height: 1100px;
 }
 
 .tab {
