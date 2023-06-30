@@ -6,7 +6,7 @@
   closeNavMenu = document.querySelector(".close-nav-menu"),
   navMenu = document.querySelector(".nav-menu"),
   menuOverlay = document.querySelector(".menu-overlay"),
-  mediaSize = 991;
+  mediaSize = 1200;
 
   openNavMenu.addEventListener("click", toggleNav);
   closeNavMenu.addEventListener("click", toggleNav);

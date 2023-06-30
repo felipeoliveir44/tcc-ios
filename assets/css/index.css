@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: #0F0F0F;
     color: aliceblue;
 }
 /* Scroll voltar para inicio */
@@ -118,8 +118,8 @@ body {
     justify-items: center;
     align-items: center;
     flex-direction: column;
+    font-size: 20px;
 }
-
 body {
     font-family: Arial, sans-serif;
 }
