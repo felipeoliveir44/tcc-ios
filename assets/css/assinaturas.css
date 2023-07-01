@@ -2,26 +2,58 @@
 
 body {
     font-family: "Tahoma", sans-serif;
-    background: #ffffff;
+    background: #0F0F0F;
     color: #000000;
     padding: 0;
 }
+/* Scroll voltar para inicio */
+.scroll-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: #F77F00;
+    position: fixed;
+    right: 1px;
+    bottom: 1px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+    transition: all .4s ease;
+    border: 1px;
+    cursor: pointer;
+}
+.scroll {
+    padding: 0;
+    color: white;
+}
 
+.scroll-top.active {
+    opacity: 1;
+    visibility: visible;
+
+}
+/* End*/ 
+
+h2 {
+    color: #fff;
+}
 .primeiraParte {
     position: relative;
     text-align: center;
     font-size: 60px;
-    padding: 50px;
 }
-
-section {
+.tabelas-preco {
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-
 .dispositivos {
+    display: flex;
+    justify-content: center;
     background: #fff;
     padding: 40px;
     font-size: 20px;
@@ -35,6 +67,8 @@ section {
 
 article {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 100px;
 }
 
@@ -46,11 +80,9 @@ article img {
 
 .video-bg video {
     width: 100%;
-    height: 1100px;
 }
 
 .tab {
-    width: 20%;
     padding: 30px;
     box-sizing: border-box;
     text-align: relative;
@@ -59,6 +91,7 @@ article img {
 }
 
 .price-box {
+    width: 400px;
     background: #272727;
     color: #fffefe;
     list-style-type: none;
@@ -91,6 +124,7 @@ li.menor {
 .exclusiva {
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 30px;
     background-color: rgb(255, 255, 255);
     padding: 10px;
@@ -98,7 +132,7 @@ li.menor {
 }
 
 .exclusiva>img {
-    width: 60%;
+    width: 50%;
     height: 80%;
 }
 
@@ -125,8 +159,10 @@ li.menor {
 
 .assinatura {
     display: flex;
+    justify-content: center;
     gap: 100px;
-    padding: 100px;
+    padding: 40px;
+    
 }
 
 .botton {
@@ -138,7 +174,7 @@ li.menor {
     padding: 10px 15px;
     align-items: center;
     text-decoration: none;
-    font-size: 50px;
+    font-size: 20px;
     border-radius: 10px;
 }
 
@@ -153,8 +189,18 @@ li.menor {
     border-radius: 10px;
 }
 
-@media (max-width: 829px) {
-    .col {
+
+@media (max-width: 1000px) {
+    .exclusiva {
+        flex-wrap: wrap;
+    }
+
+    .exclusiva > img {
         width: 100%;
+    }
+
+    .campeonato {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }

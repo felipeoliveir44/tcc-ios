@@ -5,10 +5,41 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-
+body {
+    background-color: #0F0F0F;
+}
 .feather {
     stroke: #fff;
 }
+/* Scroll voltar para inicio */
+.scroll-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: #F77F00;
+    position: fixed;
+    right: 1px;
+    bottom: 1px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+    transition: all .4s ease;
+    border: 1px;
+    cursor: pointer;
+}
+.scroll {
+    padding: 0;
+    color: white;
+}
+
+.scroll-top.active {
+    opacity: 1;
+    visibility: visible;
+
+}
+/* End*/ 
 
 /* Slides */
 
@@ -88,7 +119,14 @@
     align-items: center;
     background-color: #0F0F0F;
     font-size: 13px;
+    color: #fff;
 }
+
+h1 {
+    grid-area: titulo;
+    font-size: 2em;
+}
+
 
 .imgNoticias {
     width: 100%;
@@ -101,7 +139,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    grid-template-areas: "card1 card1 card2"
+    grid-template-areas:
+        "titulo titulo titulo"
+        "card1 card1 card2"
         "card1 card1 card3"
         "novasNoticias card4 card5"
         "novasNoticias card6 card7";
@@ -139,15 +179,17 @@
     grid-area: card7;
 }
 
-
-
-
 .p-cards {
     background-color: #171717;
     border: 1px solid black;
     color: #fff;
 }
 
+
+.p-cards:hover {
+    border: 1px solid #F77F00;
+    transition: .5s ease-in-out;
+}
 .p-header_projeto img {
     width: 100%;
     background-color: #C4C4C4;
@@ -186,6 +228,11 @@
     padding: 10px;
     overflow: auto;
     background-color: #171717;
+}
+
+.container-novasNoticias:hover {
+    border: 1px solid #F77F00;
+    transition: .5s ease-in-out;
 }
 
 .container-novasNoticias h2 {
@@ -317,6 +364,18 @@ video {
     border: 1px solid #000;
 }
 
+.div1:hover,
+.div2:hover,
+.div3:hover,
+.div4:hover,
+.div5:hover,
+.div6:hover,
+.div7:hover,
+.div8:hover,
+.div9:hover {
+    border: 1px solid #F77F00;
+    transition: .5s ease-in-out;
+}
 .mais-conteudo {
     display: none;
 }
@@ -327,7 +386,7 @@ video {
     color: #fff;
     font-size: 1.5em;
     background-color: transparent;
-    border: 1px solid red;
+    border: 1px solid #F77F00;
     cursor: pointer;
 }
 
@@ -442,7 +501,8 @@ video {
 
     .container-principal {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
+        grid-template-areas:
+            "titulo titulo"
             "card1 card1"
             "card2 card3"
             "card4 card5"
@@ -451,20 +511,23 @@ video {
     }
 
     .noticias {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
             "noticiasBasc1 noticiasBasc1"
             "noticiasBasc2 noticiasBasc3"
             "noticiasBasc4 noticiasBasc5"
             "noticiasBasc6 noticiasBasc6";
     }
+
     .div1:nth-child(1) {
         height: auto;
         grid-template-columns: auto;
     }
+
     .videosTextos {
         grid-row: 2;
     }
+
     .slide .content {
         bottom: -300px;
         left: 0;
@@ -477,9 +540,14 @@ video {
 }
 
 @media (max-width: 700px) {
+    .scroll-top {
+        width: 50px;
+        height: 50px;
+    }
     .container-novasNoticias {
         height: 400px;
     }
+
     .videos {
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas: "div1""div2""div3""div4""div5""div6""div7""div8""div9";
@@ -487,7 +555,8 @@ video {
 
     .container-principal {
         grid-template-columns: auto;
-        grid-template-areas: 
+        grid-template-areas:
+            "titulo titulo"
             "card1 card1"
             "card2 card2"
             "card3 card3"
