@@ -1,10 +1,15 @@
 @charset "utf-8";
+
 body {
-    font-family: "Tahoma", sans-serif;
-    background: #ffffff;
-    color: #000000;
-    padding: 0;
+  font-family: "Tahoma", sans-serif;
+  background: #0F0F0F;
+  padding: 0;
 }
+
+h1 {
+  color: #fff;
+}
+
 /* Scroll voltar para inicio */
 .scroll-top {
   display: flex;
@@ -23,6 +28,7 @@ body {
   border: 1px;
   cursor: pointer;
 }
+
 .scroll {
   padding: 0;
   color: white;
@@ -33,52 +39,62 @@ body {
   visibility: visible;
 
 }
-/* End*/ 
 
-.conteudo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* End*/
+
+.conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .formulario {
-    display:flex;
-    font-size: large;
-    justify-content: center;
-    padding: 100px;
+  display: flex;
+  font-size: large;
+  justify-content: center;
+  padding: 100px;
 }
 
-form {
-    max-width: 400px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
+.container-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #0F0F0F, #F77F00 ) 1;
+  padding: 30px;
+}
 
-  input[type="text"],
-  input[type="email"],
-  select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-  }
+.form-assinar {
+  width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-  input[type="submit"] {
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 3px;
-    cursor: pointer;
-  }
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
 
+.inputs {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background-color: #F77F00;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}

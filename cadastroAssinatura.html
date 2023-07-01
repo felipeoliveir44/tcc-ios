@@ -50,7 +50,9 @@
                         </li>
 
                         <li class="menu-item menu-item-has-children menu-login">
-                            <a href="#" data-toggle="sub-menu">Login<i data-feather="user"></i></a>
+                            <a href="#" style="display: flex;
+                            align-items: center;
+                            gap: 10px;" data-toggle="sub-menu">Login<i data-feather="user"></i></a>
                             <ul class="sub-menu">
                                 <div class="container-login">
                                     <form class="form-login">
@@ -73,25 +75,25 @@
 
     <button class="scroll-top" onclick="backTop();"><i class="scroll fa-solid fa-arrow-up"></i></button>
     <div class="formulario">
-        <div>
+        <div class="container-form">
             <h1>SEU TIME, DO SEU LADO. SEMPRE.</h1>
 
-            <form action="/processar_assinatura" method="POST">
+            <form class="form-assinar" action="/processar_assinatura" method="POST">
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required><br>
+                <input class="inputs" type="text" id="nome" name="nome" required><br>
 
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required><br>
+                <input class="inputs" type="email" id="email" name="email" required><br>
 
                 <label for="plano">Plano:</label>
-                <select id="plano" name="plano" required>
+                <select class="inputs" id="plano" name="plano" required>
                     <option value="basico">MENSAL</option>
                     <option value="padrao">TRIMESTRAL</option>
                     <option value="premium">ANUAL</option>
                 </select><br>
 
                 <label for="metodo_pagamento">Método de pagamento:</label>
-                <select id="metodo_pagamento" name="metodo_pagamento" required>
+                <select class="inputs" id="metodo_pagamento" name="metodo_pagamento" required>
                     <option value="cartao_credito">Cartão de Crédito</option>
                     <option value="debito_automatico">Débito Automático</option>
                     <option value="boleto">Boleto Bancário</option>
@@ -172,6 +174,7 @@
     </footer>
 
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/navbar.js"></script>
 </body>
 
 </html>
