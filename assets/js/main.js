@@ -1,5 +1,4 @@
 
-
 window.addEventListener('scroll', function() {
   let scroll = document.querySelector('.scroll-top');
   scroll.classList.toggle('active', window.scrollY > 450);
