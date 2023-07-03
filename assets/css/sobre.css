@@ -1,6 +1,7 @@
 body {
     background-color: #0F0F0F;
 }
+
 /* Scroll voltar para inicio */
 .scroll-top {
     display: flex;
@@ -19,6 +20,7 @@ body {
     border: 1px;
     cursor: pointer;
 }
+
 .scroll {
     padding: 0;
     color: white;
@@ -29,31 +31,43 @@ body {
     visibility: visible;
 
 }
-/* End*/ 
+
+/* End*/
 
 .sobre {
-    max-width: 1250px;
-    margin: auto;
-    padding: 50px 40px 25px 40px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 50px;
 }
 
 .sobre_conteudo {
     background-color: #fff;
 }
-.sobre div{
+
+.sobre div {
     padding-bottom: 25px;
 }
-.sobre div h1, h2, h3{
-    font-size: 1.5rem;
-}
-.sobre div p{
-    font-size: 0.9rem;
+
+.sobre div h1,
+h2,
+h3 {
+    font-size: 2rem;
+    border-bottom: 1px solid #F77F00;
 }
 
-.sobre div p strong{
+.sobre div p {
+    font-size: 1rem;
+}
+
+.sobre div p strong {
     color: #000000;
 }
-@media (max-width: 700px ) {
+
+.bold {
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
     .scroll-top {
         width: 50px;
         height: 50px;
