@@ -167,7 +167,7 @@ input[type="date"] {
     width: 200px;
     height: 130px;
     padding: 10px;
-    background-color: rgb(78, 75, 75);
+    background-color: #171717;
     cursor: pointer;
     margin: 20px;
     border-radius: 8px;
@@ -227,12 +227,12 @@ input[type="date"] {
     justify-content: center;
     font-family: 'Open Sans', sans-serif;
     font-size: large;
-    width: 1000px;
+    width: 1200px;
     border-radius: 10px;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: rgb(78, 75, 75);
+    background-color:#171717;
 }
 
 
@@ -240,6 +240,27 @@ input[type="date"] {
     text-align: center;
     word-wrap: break-word;
     justify-content: center;
+    font-size: 1.5rem;
+}
+
+.assine {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.btn-assine {
+    width: 100px;
+    height: 50px;
+    background-color: #F77F00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
 }
 
 /* fim do home */
@@ -252,6 +273,7 @@ input[type="date"] {
         width: 100%;
         object-fit: cover;
     }
+
     .card:nth-child(even) img {
         order: 0;
     }
@@ -259,12 +281,13 @@ input[type="date"] {
     h1 {
         font-size: 2em;
     }
-    
+
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     .box1 {
         width: 100%;
+        height: auto;
     }
 
     .box_cont1 {
@@ -272,7 +295,7 @@ input[type="date"] {
     }
 }
 
-@media (max-width: 700px ) {
+@media (max-width: 700px) {
     .scroll-top {
         width: 50px;
         height: 50px;
