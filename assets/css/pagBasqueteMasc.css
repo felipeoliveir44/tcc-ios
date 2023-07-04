@@ -44,9 +44,10 @@ body {
 /* Slides */
 
 .slideshow-container {
+    display: none;
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 110vh;
     /* Ajuste a altura desejada aqui */
     overflow: hidden;
 }

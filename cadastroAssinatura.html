@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="assets/css/cadastroAssinatura.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/header.css">
-    <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://kit.fontawesome.com/591b076557.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="./assets/js/notify.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
@@ -65,7 +68,7 @@
                                     </form>
                                 </div>
                             </ul>
-                            
+
                         </li>
                     </ul>
                 </nav>
@@ -86,6 +89,10 @@
                 <label for="email">E-mail:</label>
                 <input class="inputs" type="email" id="email" name="email" required><br>
 
+                <label for="dataNasc">Data de Nascimento:</label>
+                <input class="inputs" type="date" id="dataNasc" placeholder="dd/mm/aaaa" required><br>
+
+
                 <label for="plano">Plano:</label>
                 <select class="inputs" id="plano" name="plano" required>
                     <option value="basico">MENSAL</option>
@@ -100,7 +107,16 @@
                     <option value="boleto">Boleto Bancário</option>
                 </select><br>
 
-                <input type="submit" value="Assinar">
+                <label for="senha">Senha:</label>
+                <input class="inputs" type="password" id="senha" required>
+                <div class="requirementos">
+                    <p>* Oito caracteres<br>
+                        * Um caracter especial <br>
+                        * Um número <br>
+                        * Uma letra maiúscula</p>
+                </div>
+
+                <button class="btn-enviar" id="btn-enviar" type="button">Enviar</button>
 
 
             </form>
@@ -176,6 +192,7 @@
 
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/cadastroAssinaturas.js"></script>
 </body>
 
 </html>

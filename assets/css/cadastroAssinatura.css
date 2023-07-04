@@ -90,7 +90,7 @@ label {
   margin-bottom: 20px;
 }
 
-input[type="submit"] {
+#btn-enviar {
   background-color: #F77F00;
   color: #fff;
   border: none;
