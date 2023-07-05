@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>World Sports: Streaming</title>
+
+  <link rel="icon" type="image/x-icon" href="./assets/imgs/header/favicon.png" />
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/streaming.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="./assets/js/notify.min.js"></script>
+  <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+  <link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@next"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-autoplay@next"></script>
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="header">
+    <div class="container">
+      <div class="header-main">
+        <div class="logo">
+          <a href="index.html"><img src="./assets/imgs/header/logoPreta.png" alt=""></a>
+        </div>
+        <div class="open-nav-menu">
+          <span></span>
+        </div>
+        <div class="menu-overlay">
+        </div>
+        <!-- navigation menu start -->
+        <nav class="nav-menu">
+          <div class="close-nav-menu">
+            <img src="./assets/imgs/header/close.png" alt="close">
+          </div>
+          <ul class="menu">
+
+            <li class="menu-item menu-item-has-children">
+              <a href="index.html" data-toggle="sub-menu">Home</a>
+            </li>
+            <li class="menu-item menu-item-has-children">
+              <a href="#" data-toggle="sub-menu">Noticias <i class="plus"></i></a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="pagFutebolMasc.html">Futebol</a>
+                </li>
+                <li class="menu-item"><a href="pagBasqueteMasc.html">Basquete</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="sobre.html">Sobre nós</a>
+            </li>
+            <li class="menu-item">
+              <a href="assinaturas.html">Assinaturas</a>
+            </li>
+
+            <li class="menu-item menu-item-has-children menu-login">
+              <a href="#" style="display: flex;
+                        align-items: center;
+                        gap: 10px;" data-toggle="sub-menu">Login<i data-feather="user"></i></a>
+              <ul class="sub-menu">
+                <div class="container-login">
+                  <form class="form-login">
+                    <label for="nome">Email:</label>
+                    <input type="text" id="emailLogin" required>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senhaLogin" required>
+                    <button class="btn-login" id="btn-login" type="button">Login</button>
+                  </form>
+                </div>
+              </ul>
+
+            </li>
+          </ul>
+        </nav>
+        <!-- navigation menu end -->
+      </div>
+    </div>
+  </header>
+
+  <section id="slider1" class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide"><img src="./assets/imgs/streaming/champions_league.jpg" alt=""></li>
+        <li class="splide__slide"><img src="./assets/imgs/streaming/copa-do-mundo-2023.jpg" alt=""></li>
+        <li class="splide__slide"><img src="./assets/imgs/streaming/basquetefem.png" alt=""></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <h2>Futebol Masculino</h2>
+    <section id="slider2" class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide custom"><a
+              href="./assets/imgs/streaming/CORINTHIANS X LIVERPOOL _ MELHORES MOMENTOS _ CONMEBOL LIBERTADORES 2023.mp4"><img
+                src="./assets/imgs/streaming/corinthians.png"></a></li>
+          <li class="splide__slide custom"><a
+              href="./assets/imgs/streaming/SÃO PAULO 1 X 0 FLUMINENSE _ MELHORES MOMENTOS _ 13ª RODADA BRASILEIRÃO 2023 _ ge.globo.mp4"><img
+                src="./assets/imgs/streaming/sp.png"></a></li>
+          <li class="splide__slide custom"><img
+                src="./assets/imgs/streaming/bahia.png"></a></li>
+          <li class="splide__slide custom"><img src="./assets/imgs/streaming/manchester.png" alt=""></li>
+          <li class="splide__slide custom"><img src="./assets/imgs/streaming/brXvenez.png" alt=""></li>
+          <li class="splide__slide custom"><img src="./assets/imgs/streaming/brXarg.png" alt=""></li>
+        </ul>
+      </div>
+    </section>
+  </section>
+
+  <section class="slide">
+    <h2>Futebol Feminino</h2>
+    <section id="slider3" class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide custom"><img
+                src="./assets/imgs/streaming/fem1.png"></li>
+          <li class="splide__slide custom"><img
+                src="./assets/imgs/streaming/fem2.png"></li>
+          <li class="splide__slide custom"><img
+            src="./assets/imgs/streaming/fem3.png"></li>
+          <li class="splide__slide custom"><img src="./assets/imgs/streaming/fem4.png" alt=""></li>
+          <li class="splide__slide custom"><img src="./assets/imgs/streaming/brXarg.png" alt=""></li>
+          <li class="splide__slide custom"><img src="./assets/imgs/streaming/brXcuba.png" alt=""></li>
+        </ul>
+      </div>
+    </section>
+  </section>
+
+  <section class="slide">
+    <h2>Basquete masculino</h2>
+    <section id="slider4" class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide custom"><img src="./assets/imgs/streaming/KNICKS.png" alt=""></li>
+          <li class="splide__slide custom"><img src="./assets/imgs/streaming/lAKERS.png" alt=""></li>
+          <li class="splide__slide custom"><img src="./assets/imgs/streaming/miamiXboston.png" alt=""></li>
+        </ul>
+      </div>
+    </section>
+  </section>
+
+  <section class="slide">
+    <h2>Basquete Feminino</h2>
+    <section id="slider5" class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide custom"><img src="./assets/imgs/streaming/brXcuba.png" alt=""></li>
+          <li class="splide__slide custom"><img src="./assets/imgs/streaming/brXvenez.png" alt=""></li>
+          <li class="splide__slide custom"><img src="./assets/imgs/streaming/brXeua.png" alt=""></li>
+        </ul>
+      </div>
+    </section>
+  </section>
+
+  <script src="./assets/js/streaming.js"></script>
+  <script src="./assets/js/cadastroAssinaturas.js"></script>
+</body>
+
+</html>
