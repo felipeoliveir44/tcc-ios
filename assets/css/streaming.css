@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -35,6 +37,7 @@ body {
 .splide {
   width: 100%;
 }
+
 .splide__slide img {
   width: 100%;
 }
@@ -52,4 +55,37 @@ body {
   display: flex;
   flex-direction: column;
   margin: 30px;
+}
+.scroll-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  background-color: #F77F00;
+  position: fixed;
+  right: 1px;
+  bottom: 1px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+  transition: all .4s ease;
+  border: 1px;
+  cursor: pointer;
+}
+.scroll {
+  padding: 0;
+  color: white;
+}
+
+.scroll-top.active {
+  opacity: 1;
+  visibility: visible;
+
+}
+@media (max-width: 700px) {
+  .scroll-top {
+    width: 50px;
+    height: 50px;
+  }
 }

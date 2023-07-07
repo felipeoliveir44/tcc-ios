@@ -80,6 +80,12 @@ h1 {
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 2rem;
     background-color: #171717;
+    border: 1px solid #000;
+}
+
+.card:hover {
+    border: 1px solid #F77F00;
+    transition: 0.3s ease-in-out;
 }
 
 .card h3 {
@@ -218,6 +224,68 @@ input[type="date"] {
     width: calc(240px + 10);
 }
 
+.slider .slide {
+    display: flex;
+}
+
+.slider .slide img {
+    aspect-ratio: 4/3;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+    width: 200px;
+    height: 130px;
+    padding: 10px;
+    background-color: rgb(78, 75, 75);
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(-50%);
+    }
+
+}
+
+.slider {
+    display: flex;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    align-items: center;
+}
+
+.slider:before {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    content: "";
+    width: 23.958%;
+    height: 130px;
+    background: linear-gradient(-90deg, hsla(0, 2%, 50%, 0), #ffffff);
+}
+
+.slider:after {
+    position: absolute;
+    right: 0;
+    content: "";
+    width: 23.958%;
+    height: 100px;
+    background: linear-gradient(90deg hsla(0, 100%, 95%, 0),
+            hsla(0, 0%, 100%, 0.99) 99%);
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 35s linear infinite;
+    -webkit-animation: scroll 35s linear infinite;
+    width: calc(240px + 10);
+}
+
 .box1 {
     background-color: #E6E6E6;
     text-align: center;
@@ -255,10 +323,15 @@ input[type="date"] {
     height: 50px;
     background-color: #F77F00;
     color: #fff;
-    border: none;
+    border: 1px solid #F77F00;
     padding: 10px 20px;
     border-radius: 3px;
     cursor: pointer;
+}
+
+.btn-assine:hover {
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
 }
 
 /* fim do home */
