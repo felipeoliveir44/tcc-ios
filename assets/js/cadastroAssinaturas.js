@@ -22,11 +22,18 @@ $('#btn-enviar').click(function () {
         localStorage.setItem("email", email);
         localStorage.setItem("senha", senha);
         $.notify("Cadastro realizado!", "success");
-        window.location.href = "streaming.html";
+        setInterval(function () {
+            trocaPag();
+          }, 2000);
+        
     } else {
         $.notify("Cadastro não realizado! Tente novamente", "error");
     }
 });
+function trocaPag() {
+    window.location.href = "streaming.html";
+}
+
 
 $('#btn-login').click(function () {
     
