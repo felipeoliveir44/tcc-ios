@@ -387,6 +387,21 @@ label {
     cursor: pointer;
 }
 
+
+.opcoesDebito {
+    display: flex;
+    gap: 10px;
+}
+
+.debito {
+    display: none;
+}
+.pix {
+    display: none;
+}
+.containerQrcode img {
+width: 100%;
+}
 /* fim do home */
 @media (max-width: 1200px) {
     .card {
