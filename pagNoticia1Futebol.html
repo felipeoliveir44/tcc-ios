@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro - assinatura</title>
     <link rel="icon" type="image/x-icon" href="./assets/imgs/header/favicon.png" />
-    <link rel="stylesheet" href="assets/css/cadastroAssinatura.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/header.css">
-
-
-    <script src="https://kit.fontawesome.com/591b076557.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
-        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script src="./assets/js/notify.min.js"></script>
+    <title>Corinthians tem novidade no meio-campo contra o Bragantino;
+        veja escalações.</title>
+    <link rel="stylesheet" href="./assets/css/pagNoticias.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script async src="https://basicons.xyz/embed.js"> </script>
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://kit.fontawesome.com/591b076557.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -79,53 +80,64 @@
             </div>
         </div>
     </header>
-
-    <button class="scroll-top" onclick="backTop();"><i class="scroll fa-solid fa-arrow-up"></i></button>
     <main>
-        <div class="formulario">
-            <div class="container-form">
-                <h1>SEU TIME, DO SEU LADO. SEMPRE.</h1>
+        <button class="scroll-top" onclick="backTop();"><i class="scroll fa-solid fa-arrow-up"></i></button>
+        <div class="noticia">
+            <h1>Corinthians tem novidade no meio-campo contra o Bragantino;
+                veja escalações.</h1>
+            <div class="container-noticia">
+                <div class="imgNoticia">
+                    <img src="./assets/imgs/noticias/futebol/vanderlei-luxemburgo-tecnico-do-corinthians-em-jogo-contra-o-athletico-pelo-brasileirao-1687635427251_v2_450x450.jpg"
+                        alt="">
+                </div>
+                <div class="textoNoticia">
+                    <div class="autor">
+                        <p><strong>Por Vinicius Mantovani</strong></p>
+                        <p class="data"><i data-feather="clock"></i>08 de jul. de 2023 13:25</p>
+                    </div>
+                    <p>Corinthians e Red Bull Bragantinos estão escalados para a partida deste domingo, às 11h, na Neo
+                        Química Arena, pela 13ª rodada do Campeonato Brasileiro. O Corinthians de Vanderlei Luxemburgo
+                        vai a campo com: Cassio, Fagner, Gil, Murillo e Bidu; Moscardo, Maycon e Ruan Oliveira; Biro,
+                        Róger Guedes e Yuri Alberto. <br><br>
+                        O Bragantino de Pedro Caixinha está confirmado com: Cleiton, Aderlan, Eduardo, Luan Patrick e
+                        Juninho Capixaba; Jadsom, Matheus Fernandes, Lucas Evangelista e Eric Ramires; Eduardo Sasha e
+                        Thiago Borbas. A grande novidade do Corinthians é Moscardo, de 17 anos, no time titular. Os
+                        desfalques são Fábio Santos (suspenso), Bruno Méndez (incômodo na coxa direita), Fausto Vera
+                        (torção no tornozelo esquerdo), Cantillo, Renato Augusto, Barletta e Romero (transição), Pedro
+                        (edema no adutor esquerdo) e Adson (crise alérgica). O Corinthians começou o domingo na 14ª
+                        colocação, com 12 pontos, e o Red Bull Bragantino no oitavo lugar, com 20.
 
-                <form class="form-assinar" action="/processar_assinatura" method="POST">
-                    <label for="nome">Nome:</label>
-                    <input class="inputs" type="text" id="nome" name="nome" required><br>
+                </div>
+            </div>
 
-                    <label for="email">E-mail:</label>
-                    <input class="inputs" type="email" id="email" name="email" required><br>
-
-                    <label for="dataNasc">Data de Nascimento:</label>
-                    <input class="inputs" type="date" id="dataNasc" placeholder="dd/mm/aaaa" required><br>
-
-
-                    <label for="plano">Plano:</label>
-                    <select class="inputs" id="plano" name="plano" required>
-                        <option value="basico">MENSAL</option>
-                        <option value="padrao">TRIMESTRAL</option>
-                        <option value="premium">ANUAL</option>
-                    </select><br>
-
-                    <label for="metodo_pagamento">Método de pagamento:</label>
-                    <select class="inputs" id="metodo_pagamento" name="metodo_pagamento" required>
-                        <option value="cartao_credito">Cartão de Crédito</option>
-                        <option value="debito_automatico">Débito Automático</option>
-                        <option value="boleto">Boleto Bancário</option>
-                    </select><br>
-
-                    <label for="senha">Senha:</label>
-                    <input class="inputs" type="password" id="senha" required>
-                    <div class="requirementos">
-                        <p>* Oito caracteres<br>
-                            * Um caracter especial <br>
-                            * Um número <br>
-                            * Uma letra maiúscula</p>
+            <div class="outrasNoticias">
+                <h2>Outras notícias</h2>
+                <div class="containerOutrasNoticias">
+                    <div class="content-outrasNoticias">
+                        <a href="#">
+                            <p>Será que é bilionário? Quanto dinheiro CR7 já ganhou ao longo da carreira?.
+                            </p>
+                            <p class="data"><i data-feather="clock"></i>08 de jul. de 2023 </p>
+                        </a>
                     </div>
 
-                    <button class="btn-enviar" id="btn-enviar" type="button">Enviar</button>
+                    <div class="content-outrasNoticias">
+                        <a href="#">
+                            <p>Com uniforme novo seleção joga amistoso contra senegal</p>
+                            <p class="data"><i data-feather="clock"></i>08 de jul. de 2023 </p>
+                        </a>
+                    </div>
 
-
-                </form>
+                    <div class="content-outrasNoticias">
+                        <a href="#">
+                            <p>Pep guardiola e seus maiores feitos no Barcelona e Manchester city
+                            </p>
+                            <p class="data"><i data-feather="clock"></i>08 de jul. de 2023 </p>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
+
     </main>
     <footer>
         <div class="content">
@@ -194,8 +206,8 @@
             </div>
         </div>
     </footer>
-
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/noticias.js"></script>
     <script src="./assets/js/navbar.js"></script>
     <script src="./assets/js/cadastroAssinaturas.js"></script>
 </body>

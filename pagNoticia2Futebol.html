@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro - assinatura</title>
     <link rel="icon" type="image/x-icon" href="./assets/imgs/header/favicon.png" />
-    <link rel="stylesheet" href="assets/css/cadastroAssinatura.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/header.css">
-
-
-    <script src="https://kit.fontawesome.com/591b076557.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
-        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script src="./assets/js/notify.min.js"></script>
+    <title>Será que é bilionário? Quanto dinheiro CR7 já ganhou ao longo da
+        carreira?.</title>
+    <link rel="stylesheet" href="./assets/css/pagNoticias.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script async src="https://basicons.xyz/embed.js"> </script>
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://kit.fontawesome.com/591b076557.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -79,53 +80,66 @@
             </div>
         </div>
     </header>
-
-    <button class="scroll-top" onclick="backTop();"><i class="scroll fa-solid fa-arrow-up"></i></button>
     <main>
-        <div class="formulario">
-            <div class="container-form">
-                <h1>SEU TIME, DO SEU LADO. SEMPRE.</h1>
+        <button class="scroll-top" onclick="backTop();"><i class="scroll fa-solid fa-arrow-up"></i></button>
+        <div class="noticia">
+            <h1>Será que é bilionário? Quanto dinheiro CR7 já ganhou ao longo da
+                carreira?.</h1>
+            <div class="container-noticia">
+                <div class="imgNoticia">
+                    <img src="./assets/imgs/noticias/futebol/cristiano-ronaldo-posa-em-sofa-durante-ferias-1687832851654_v2_450x450.jpg"
+                        alt="">
+                </div>
+                <div class="textoNoticia">
+                    <div class="autor">
+                        <p><strong>Por Vinicius Mantovani</strong></p>
+                        <p class="data"><i data-feather="clock"></i>08 de jul. de 2023 13:25</p>
+                    </div>
+                    <p>Cristiano Ronaldo é o jogador de futebol mais bem remunerado do mundo. Desde janeiro, quando se
+                        mudou para o Al-Nassr e passou a receber 200 milhões de euros por temporada (quase R$ 1,1
+                        bilhão), ele se transformou no dono do maior salário da história da modalidade. Vale frisar que
+                        esse valor é apenas o que o camisa 7 português recebe anualmente para jogar futebol e emprestar
+                        sua imagem para exploração do governo da Arábia Saudita. <br><br>
+                        Ou seja, os rendimentos verdadeiros de CR7 são muito maiores, já que incluem também seus
+                        patrocinadores pessoais, ganhos com merchandisings e vendas de produtos próprios e lucro dos
+                        inúmeros negócios que comprou e construiu ao longo da carreira. Como o veterano de 38 anos já
+                        figura no primeiro escalão do futebol mundial (tanto técnico quanto financeiro), é óbvia a
+                        conclusão que ele já acumulou uma bela fortuna. Mas qual o tamanho dela? Quanto dinheiro CR7 já
+                        ganhou? A melhor forma de ter uma noção do quanto a trajetória nos gramados já rendeu para CR7 é
+                        analisar as listas anuais de jogadores mais bem pagos do planeta que a revista norte-americana
+                        "Forbes", especializada no mundo.
 
-                <form class="form-assinar" action="/processar_assinatura" method="POST">
-                    <label for="nome">Nome:</label>
-                    <input class="inputs" type="text" id="nome" name="nome" required><br>
+                </div>
+            </div>
 
-                    <label for="email">E-mail:</label>
-                    <input class="inputs" type="email" id="email" name="email" required><br>
-
-                    <label for="dataNasc">Data de Nascimento:</label>
-                    <input class="inputs" type="date" id="dataNasc" placeholder="dd/mm/aaaa" required><br>
-
-
-                    <label for="plano">Plano:</label>
-                    <select class="inputs" id="plano" name="plano" required>
-                        <option value="basico">MENSAL</option>
-                        <option value="padrao">TRIMESTRAL</option>
-                        <option value="premium">ANUAL</option>
-                    </select><br>
-
-                    <label for="metodo_pagamento">Método de pagamento:</label>
-                    <select class="inputs" id="metodo_pagamento" name="metodo_pagamento" required>
-                        <option value="cartao_credito">Cartão de Crédito</option>
-                        <option value="debito_automatico">Débito Automático</option>
-                        <option value="boleto">Boleto Bancário</option>
-                    </select><br>
-
-                    <label for="senha">Senha:</label>
-                    <input class="inputs" type="password" id="senha" required>
-                    <div class="requirementos">
-                        <p>* Oito caracteres<br>
-                            * Um caracter especial <br>
-                            * Um número <br>
-                            * Uma letra maiúscula</p>
+            <div class="outrasNoticias">
+                <h2>Outras notícias</h2>
+                <div class="containerOutrasNoticias">
+                    <div class="content-outrasNoticias">
+                        <a href="#">
+                            <p>Essa dupla da nova geração que ira subistituir Messi e Cristiano ronaldo?
+                            </p>
+                            <p class="data"><i data-feather="clock"></i>08 de jul. de 2023 </p>
+                        </a>
                     </div>
 
-                    <button class="btn-enviar" id="btn-enviar" type="button">Enviar</button>
+                    <div class="content-outrasNoticias">
+                        <a href="#">
+                            <p>Com uniforme novo seleção joga amistoso contra senegal</p>
+                            <p class="data"><i data-feather="clock"></i>08 de jul. de 2023 </p>
+                        </a>
+                    </div>
 
-
-                </form>
+                    <div class="content-outrasNoticias">
+                        <a href="#">
+                            <p>Pep guardiola e seus maiores feitos no Barcelona e Manchester city
+                            </p>
+                            <p class="data"><i data-feather="clock"></i>08 de jul. de 2023 </p>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
+
     </main>
     <footer>
         <div class="content">
@@ -194,8 +208,8 @@
             </div>
         </div>
     </footer>
-
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/noticias.js"></script>
     <script src="./assets/js/navbar.js"></script>
     <script src="./assets/js/cadastroAssinaturas.js"></script>
 </body>

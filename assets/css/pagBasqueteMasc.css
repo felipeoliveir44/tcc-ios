@@ -250,6 +250,10 @@ h1 {
     padding-bottom: 10px;
 }
 
+.p-cards a {
+    color: #fff;
+}
+
 /* End noticias*/
 
 /* Videos */

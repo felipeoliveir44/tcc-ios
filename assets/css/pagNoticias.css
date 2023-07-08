@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0F0F0F;
+}
+
+/* Scroll voltar para inicio */
+.scroll-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: #F77F00;
+    position: fixed;
+    right: 1px;
+    bottom: 1px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+    transition: all .4s ease;
+    border: 1px;
+    cursor: pointer;
+}
+
+.scroll {
+    padding: 0;
+    color: white;
+}
+
+.scroll-top.active {
+    opacity: 1;
+    visibility: visible;
+
+}
+
+/* End*/
+
+.noticia {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.noticia h1 {
+    font-size: 2rem;
+}
+
+.noticia img {
+    width: 100%;
+}
+.textoNoticia {
+    padding: 10px;
+}
+.textoNoticia p {
+    margin: 20px 0;
+    font-size: 1em;
+}
+
+.autor {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.data {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.container-noticia {
+    background-color: #1A1A1A;
+}
+.containerOutrasNoticias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.outrasNoticias {
+    max-width: 1200px;
+    display: grid;
+    margin: 10px auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.content-outrasNoticias {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    height: auto;
+    background-color: #1A1A1A;
+    padding: 10px;
+    
+}
+
+
+.content-outrasNoticias a {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width: 1200px) {
+    .containerOutrasNoticias {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    .scroll-top {
+        width: 50px;
+        height: 50px;
+    }
+}
+
