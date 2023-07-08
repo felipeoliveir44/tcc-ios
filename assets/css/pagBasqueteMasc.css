@@ -184,12 +184,13 @@ h1 {
     background-color: #171717;
     border: 1px solid black;
     color: #fff;
+    transition: transform 0.3s;
 }
 
 
 .p-cards:hover {
     border: 1px solid #F77F00;
-    transition: .5s ease-in-out;
+    transform: scale(1.050);
 }
 .p-header_projeto img {
     width: 100%;
@@ -229,11 +230,12 @@ h1 {
     padding: 10px;
     overflow: auto;
     background-color: #171717;
+    transition: transform 0.3s;
 }
 
 .container-novasNoticias:hover {
     border: 1px solid #F77F00;
-    transition: .5s ease-in-out;
+    transform: scale(1.050);
 }
 
 .container-novasNoticias h2 {
@@ -246,6 +248,10 @@ h1 {
     flex-direction: column;
     gap: 10px;
     padding-bottom: 10px;
+}
+
+.p-cards a {
+    color: #fff;
 }
 
 /* End noticias*/
@@ -363,6 +369,7 @@ video {
 .div8,
 .div9 {
     border: 1px solid #000;
+    transition: transform 0.3s;
 }
 
 .div1:hover,
@@ -375,7 +382,7 @@ video {
 .div8:hover,
 .div9:hover {
     border: 1px solid #F77F00;
-    transition: .5s ease-in-out;
+    transform: scale(1.050);
 }
 .mais-conteudo {
     display: none;
