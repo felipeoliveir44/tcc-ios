@@ -21,6 +21,19 @@ opcoes.addEventListener("change", function () {
 
 });
 
-$('#btn-enviar').click(function () { 
-    $.notify("Obrigado pela doação!", "success");
+$('#btn-enviar').click(function () {
+    let email = document.getElementById("email").value;
+    let emailRegex = /^\S+@\S+\.\S+$/;
+    let emailValido = emailRegex.test(email);
+    if (emailValido) {
+        
+        $.notify("Obrigado pela doação!", "success");
+        setInterval(function () {
+            window.location.href = "index.html";
+        }, 2000);
+
+    } else {
+        $.notify("Erro! Tente novamente", "error");
+    }
+    
 });
