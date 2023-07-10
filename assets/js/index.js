@@ -6,7 +6,7 @@ const divPix = document.querySelector(".pix")
 opcoes.addEventListener("change", function () {
     const opcaoSelecionada = opcoes.value;
     
-    if(opcaoSelecionada === 'debito_automatico') {
+    if(opcaoSelecionada === 'debito' || opcaoSelecionada === 'cartao_credito') {
         divDebito.style.display = "block";
         divPix.style.display = "none";
     }
@@ -19,4 +19,8 @@ opcoes.addEventListener("change", function () {
         divPix.style.display = "none";
     }
 
-})
+});
+
+$('#btn-enviar').click(function () { 
+    $.notify("Obrigado pela doação!", "success");
+});

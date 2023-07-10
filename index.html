@@ -42,9 +42,9 @@
                             <img src="./assets/imgs/header/close.png" alt="close">
                         </div>
                         <ul class="menu">
-
-                            <li class="menu-item menu-item-has-children">
-                                <a href="index.html" data-toggle="sub-menu">Home</a>
+    
+                            <li class="menu-item">
+                                <a href="index.html">Home</a>
                             </li>
                             <li class="menu-item menu-item-has-children">
                                 <a href="#" data-toggle="sub-menu">Noticias <i class="plus"></i></a>
@@ -61,7 +61,7 @@
                             <li class="menu-item">
                                 <a href="assinaturas.html">Assinaturas</a>
                             </li>
-
+    
                             <li class="menu-item menu-item-has-children menu-login">
                                 <a href="#" style="display: flex;
                                 align-items: center;
@@ -77,7 +77,7 @@
                                         </form>
                                     </div>
                                 </ul>
-
+    
                             </li>
                         </ul>
                     </nav>
@@ -218,7 +218,7 @@
                         <label for="metodo_pagamento">Método de pagamento:</label>
                         <select class="inputs" id="metodo_pagamento" name="metodo_pagamento" required>
                             <option value="null">--</option>
-                            <option value="debito_automatico">Débito Automático</option>
+                            <option value="debito">Débito</option>
                             <option value="pix">Pix</option>
                         </select><br>
 
@@ -270,11 +270,22 @@
                             <div class="codigoPix">
                                 <p>Copiar código PIX</p>
                                 <label for="pixCodigo"></label>
-                                <input type="text" value="00020126580014BR.GOV.BCB.PIX01360ad2edc4-48a1-40c7-81cf-1b502ae5c6b15204000053039865802BR5925Luiz Felipe da Silva Oliv6009SAO PAULO61080540900062250521YF2QSYQL0eo3tr511evxr63044445" readonly>
+                                <input type="text"
+                                    value="00020126580014BR.GOV.BCB.PIX01360ad2edc4-48a1-40c7-81cf-1b502ae5c6b15204000053039865802BR5925Luiz Felipe da Silva Oliv6009SAO PAULO61080540900062250521YF2QSYQL0eo3tr511evxr63044445"
+                                    readonly>
                             </div>
                         </div>
 
-                        <label for="valor">Valor:</label>
+                        <label for="instituicao">Instituição que deseja doar: </label>
+                        <select class="inputs" id="instituicao" name="instituicao" required>
+                            <option value="aacd">AACD</option>
+                            <option value="add">Associação desportiva para deficientes</option>
+                            <option value="adaptsurf">Adaptsurf</option>
+                            <option value="institutoNeymarJr">Instituto Neymar Jr</option>
+                            <option value="institutoViniJr">Instituto Vini Jr</option>
+                        </select>
+
+                        <label for="valor">Valor R$:</label>
                         <input class="inputs" type="number" id="valor" name="valor" required><br>
                         <button class="btn-enviar" id="btn-enviar" type="button">Enviar</button>
 
@@ -359,9 +370,9 @@
         </footer>
         </main>
         <script src="./assets/js/index.js"></script>
-        <script src="./assets/js/cadastroAssinaturas.js"></script>
         <script src="./assets/js/main.js"></script>
         <script src="./assets/js/navbar.js"></script>
+        <script src="./assets/js/login.js"></script>
 
     </body>
 
