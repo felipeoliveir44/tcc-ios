@@ -8,6 +8,7 @@
   <link rel="icon" type="image/x-icon" href="./assets/imgs/header/favicon.png" />
   <link rel="stylesheet" href="./assets/css/header.css">
   <link rel="stylesheet" href="./assets/css/streaming.css">
+  <link rel="stylesheet" href="./assets/css/notificacao.css">
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"
     integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
   <script src="./assets/js/notify.min.js"></script>
@@ -25,6 +26,19 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 </head>
 
 <body>
+  <div class="notification popup-doacao">
+    <p>Obrigado pela doação! ❤️ </p>
+    <span class="notification-progress"></span>
+  </div>
+  <div class="notification popup-login">
+    <p></p>
+    <span class="notification-progress"></span>
+  </div>
+
+  <div class="notification popup-erro">
+    <p>❌ Erro! Tente novamente </p>
+    <span class="notification-progress"></span>
+  </div>
   <!-- Navbar -->
   <header class="header">
     <div class="container">
@@ -86,7 +100,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       </div>
     </div>
   </header>
-  
+
   <button class="scroll-top" onclick="backTop();"><i class="scroll fa-solid fa-arrow-up"></i></button>
   <section id="slider1" class="splide">
     <div class="splide__track">

@@ -22,18 +22,24 @@ opcoes.addEventListener("change", function () {
 });
 
 $('#btn-enviar').click(function () {
+    let notificacaoDoacao = document.querySelector(".popup-doacao");
+    let notificacaoErro = document.querySelector(".popup-erro");
     let email = document.getElementById("email").value;
     let emailRegex = /^\S+@\S+\.\S+$/;
     let emailValido = emailRegex.test(email);
     if (emailValido) {
         
-        $.notify("Obrigado pela doação!", "success");
+        notificacaoDoacao.style.display = "block";
+        
         setInterval(function () {
             window.location.href = "index.html";
-        }, 2000);
+        }, 5000);
 
     } else {
-        $.notify("Erro! Tente novamente", "error");
+        notificacaoErro.style.display = "block";
+        setTimeout(function () {
+            notificacaoErro.style.display = "none"; // Esconder a mensagem de erro após 2 segundos
+        }, 4500);
     }
     
 });
