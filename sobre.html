@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>World Sports: Sobre nós</title>
+    <link rel="icon" type="image/x-icon" href="./assets/imgs/header/favicon.png" />
+    <link rel="stylesheet" href="./assets/css/dark_mode_and_search.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/sobre.css">
+    <link rel="stylesheet" href="./assets/css/notificacao.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/591b076557.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <div class="notification popup-doacao">
+        <p>Obrigado pela doação! ❤️ </p>
+        <span class="notification-progress"></span>
+    </div>
+    <div class="notification popup-login">
+        <p></p>
+        <span class="notification-progress"></span>
+    </div>
+
+    <div class="notification popup-erro">
+        <p>❌ Erro! Tente novamente </p>
+        <span class="notification-progress"></span>
+    </div>
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <header class="header">
+        <div class="container">
+            <div class="header-main">
+                <div class="logo">
+                    <a href="index.html"><img src="./assets/imgs/header/logoPreta.png" alt=""></a>
+                </div>
+                <div class="open-nav-menu">
+                    <span></span>
+                </div>
+                <div class="menu-overlay">
+                </div>
+                <!-- navigation menu start -->
+                <nav class="nav-menu">
+                    <div class="close-nav-menu">
+                        <img src="./assets/imgs/header/close.png" alt="close">
+                    </div>
+                    <ul class="menu">
+
+                        <li class="menu-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#" data-toggle="sub-menu">Noticias <i class="plus"></i></a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="pagFutebol.html">Futebol</a>
+                                </li>
+                                <li class="menu-item"><a href="pagBasquete.html">Basquete</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="sobre.html">Sobre nós</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="assinaturas.html">Assinaturas</a>
+                        </li>
+
+                        <li class="menu-item menu-item-has-children menu-login">
+                            <a href="#" style="display: flex;
+                            align-items: center;
+                            gap: 10px;" data-toggle="sub-menu">Login<i data-feather="user"></i></a>
+                            <ul class="sub-menu">
+                                <div class="container-login">
+                                    <form class="form-login">
+                                        <label for="nome">Email:</label>
+                                        <input type="text" id="emailLogin" required>
+                                        <label for="senha">Senha:</label>
+                                        <input type="password" id="senhaLogin" required>
+                                        <button class="btn-login" id="btn-login" type="button">Login</button>
+                                    </form>
+                                </div>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </nav>
+                <!-- navigation menu end -->
+            </div>
+        </div>
+    </header>
+    <div class="sobre_conteudo">
+        <button class="scroll-top" onclick="backTop();"><i class="scroll fa-solid fa-arrow-up"></i></button>
+        <div class="sobre">
+            <div>
+                <h1>Empresa</h1>
+                <p>A World Sports foi criada em 2020 e sediada em São Paulo (Brasil), sendo seus
+                    fundadores: <strong>Milena Stephany; Luiz Felipe; Mateus Tavares; Vinicius Mantovani</strong>. Somos
+                    uma empresa com
+                    o foco no mundo dos esportes, atualmente abordando apenas o futebol e o basquete.
+                    Acreditamos no poder do esporte para transformar vidas e impactar positivamente as
+                    pessoas. Motivada por essa crença, a empresa apoia instituições que promovem o esporte para pessoas
+                    com deficiência, reservando uma parte significativa de seus recursos para ajudá-las. Além de doações
+                    financeiras, a World Sports busca estabelecer parcerias de longo prazo, oferecendo conhecimento,
+                    recursos técnicos e voluntariado. Convidamos as pessoas a se juntarem a nossa causa nobre,
+                    contribuindo para o avanço dessas instituições e para criar um mundo mais inclusivo e igualitário.
+                </p>
+            </div>
+            <div>
+                <h2>Serviço de Streaming</h2>
+                <p>Atualmente oferecemos nosso plano de streaming mensal ou anual, para todos os campeonatos de basquete
+                    e futebol, podendo assistir jogos ao vivo e transmissões passadas. <strong>Aqui é transmitido os
+                        maiores campeonatos do mundo</strong> como: NBA; Champions League; Copa do Mundo.
+                </p>
+            </div>
+            <div>
+                <h3>Em breve</h3>
+                <p>Em breve teremos todos os <strong>jogos da olimpíadas</strong> em nossas plataformas digitais. Nosso
+                    <strong>serviço de streaming</strong> será <strong>expandido</strong> para mais 3 esportes (Futsal,
+                    Golf, Vôlei). Teremos nossas <strong>lojas oficiais</strong> que serão oferece todos os acessórios e
+                    utensílios necessários para a prática do futebol ou basquete, e também
+                    personalizações do seu gosto.
+                </p>
+            </div>
+            <div>
+                <div class="missao">
+                    <h3>Missão</h3>
+                    <p>Promover e inspirar a paixão pelo esporte, em particular o futebol e o basquete, proporcionando
+                        experiências excepcionais aos nossos clientes, atletas e fãs, através de produtos, serviços e
+                        eventos de alta qualidade. Buscamos desenvolver o potencial dos nossos atletas e contribuir para
+                        o crescimento e o fortalecimento dessas modalidades esportivas em nossa comunidade.</p>
+                </div>
+
+                <div class="visao">
+                    <h3>Visão</h3>
+                    <p>Ser reconhecida como a empresa líder no mercado esportivo, referência em produtos, serviços e
+                        eventos relacionados ao futebol e basquete. Nosso objetivo é construir uma marca globalmente
+                        conhecida pela excelência, inovação e compromisso com o desenvolvimento do esporte, promovendo a
+                        inclusão e a diversidade em todas as suas formas.</p>
+                </div>
+
+                <div class="valores">
+                    <h3>Valores</h3>
+                    <p><span class="bold">1. Paixão pelo esporte:</span> Acreditamos no poder transformador do esporte e
+                        na sua capacidade de unir
+                        pessoas. Valorizamos a paixão pelo futebol e basquete, dedicando-nos a promover e compartilhar
+                        essa paixão com nossos clientes e colaboradores.<br>
+
+                        <span class="bold">2. Excelência:</span> Buscamos constantemente a excelência em tudo o que
+                        fazemos. Desde a qualidade dos
+                        nossos produtos e serviços até a experiência que oferecemos aos nossos clientes e atletas, nos
+                        esforçamos para superar as expectativas e alcançar a perfeição.<br>
+
+                        <span class="bold">3. Inovação:</span> Estamos sempre em busca de novas ideias, tecnologias e
+                        abordagens para aprimorar o
+                        esporte e proporcionar experiências únicas. Valorizamos a criatividade e a capacidade de
+                        adaptação, buscando constantemente maneiras inovadoras de melhorar nossos produtos e
+                        serviços.<br>
+
+                        <span class="bold">4. Integridade:</span> Agimos com honestidade, ética e transparência em todas
+                        as nossas interações.
+                        Valorizamos a confiança e o respeito mútuo, mantendo relações comerciais e pessoais baseadas na
+                        integridade e na justiça.<br>
+
+                        <span class="bold">5. Trabalho em equipe:</span> Reconhecemos que o sucesso depende do esforço
+                        conjunto e da colaboração
+                        de todos. Encorajamos um ambiente de trabalho inclusivo, no qual valorizamos e respeitamos as
+                        contribuições individuais, promovendo a diversidade de pensamento e a sinergia entre nossas
+                        equipes.<br>
+
+                        <span class="bold">6. Responsabilidade social:</span> Comprometemo-nos a ser uma empresa
+                        socialmente responsável,
+                        contribuindo positivamente para as comunidades em que operamos. Buscamos apoiar iniciativas
+                        esportivas, educacionais e sociais que promovam o desenvolvimento das modalidades esportivas, a
+                        inclusão e o bem-estar das pessoas.<br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="content">
+            <div class="top">
+                <div class="media-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="link-boxes">
+                <ul class="box">
+                    <li class="link_name">Empresa</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contate-nos</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Sedes</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Serviços</li>
+                    <li><a href="#">Streaming</a></li>
+                    <li><a href="#">Loja oficial</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#">Camisas<br>personalizadas</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Conta</li>
+                    <li><a href="#">Perfil</a></li>
+                    <li><a href="#">Recomend.</a></li>
+                    <li><a href="#">Preferências</a></li>
+                    <li><a href="#">Histórico</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Fundadores</li>
+                    <li><a href="#">M. Stephany</a></li>
+                    <li><a href="#">L. Felipe</a></li>
+                    <li><a href="#">M. Tavares</a></li>
+                    <li><a href="#">V. Mantovani</a></li>
+                </ul>
+            </div>
+            <div class="apps">
+                <ul class="baixem">
+                    <p>Baixem nosso app:<br></p><img src="./assets/imgs/icons/apps.png" alt="">
+                </ul>
+
+                <ul class="box input-box">
+                    <li class="link_name">Mande uma<br>mensagem</li><textarea
+                        placeholder="Digite aqui seu elogio ou reclamação" name="" id="" cols="30" rows="10"></textarea>
+                    </li>
+                    <li><input type="button" value="Enviar"></li>
+                </ul>
+
+            </div>
+        </div>
+        </div>
+        <div class="bottom-details">
+            <div class="bottom_text">
+                <span class="copyright_text">Copyright © 2023 World Sports. Todos os direitos
+                    reservados</span>
+                <span class="policy_terms">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos e condições</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/login.js"></script>
+</body>
+
+</html>

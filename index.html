@@ -1,12 +1,396 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="./assets/imgs/header/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TCC - IOS</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/notificacao.css">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512- lEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==
+" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Jquery-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="./assets/js/notify.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>World Sports: O Epicentro do Futebol e Basquete - Explore o Universo dos Esportes Mais Apaixonantes</title>
 </head>
+
 <body>
-    
-</body>
+
+    <body>
+
+        <div class="notification popup-doacao">
+            <p>Obrigado pela doação! ❤️ </p>
+            <span class="notification-progress"></span>
+        </div>
+        <div class="notification popup-login">
+            <p></p>
+            <span class="notification-progress"></span>
+        </div>
+
+        <div class="notification popup-erro">
+            <p>❌ Erro! Tente novamente </p>
+            <span class="notification-progress"></span>
+        </div>
+        <!-- Navbar -->
+        <header class="header">
+            <div class="container">
+                <div class="header-main">
+                    <div class="logo">
+                        <a href="index.html"><img src="./assets/imgs/header/logoPreta.png" alt=""></a>
+                    </div>
+                    <div class="open-nav-menu">
+                        <span></span>
+                    </div>
+                    <div class="menu-overlay">
+                    </div>
+                    <!-- navigation menu start -->
+                    <nav class="nav-menu">
+                        <div class="close-nav-menu">
+                            <img src="./assets/imgs/header/close.png" alt="close">
+                        </div>
+                        <ul class="menu">
+
+                            <li class="menu-item">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#" data-toggle="sub-menu">Noticias <i class="plus"></i></a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="pagFutebol.html">Futebol</a>
+                                    </li>
+                                    <li class="menu-item"><a href="pagBasquete.html">Basquete</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="sobre.html">Sobre nós</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="assinaturas.html">Assinaturas</a>
+                            </li>
+
+                            <li class="menu-item menu-item-has-children menu-login">
+                                <a href="#" style="display: flex;
+                                align-items: center;
+                                gap: 10px;" data-toggle="sub-menu">Login<i data-feather="user"></i></a>
+                                <ul class="sub-menu">
+                                    <div class="container-login">
+                                        <form class="form-login">
+                                            <label for="nome">Email:</label>
+                                            <input type="text" id="emailLogin" required>
+                                            <label for="senha">Senha:</label>
+                                            <input type="password" id="senhaLogin" required>
+                                            <button class="btn-login" id="btn-login" type="button">Login</button>
+                                        </form>
+                                    </div>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- navigation menu end -->
+                </div>
+            </div>
+        </header>
+
+        <!-- Inicio do home-->
+
+        <button class="scroll-top" onclick="backTop();"><i class="scroll fa-solid fa-arrow-up"></i></button>
+        <section class="container-intro">
+            <div class="imgIntro">
+                <img src="./assets/imgs/home/banner.jpg" alt="">
+            </div>
+
+        </section>
+
+        <section class="section-grid">
+            <div class="grid">
+                <h1>Campeões dos principais torneios das modalidades Basquete/Futebol </h1>
+                <div class="container-grid">
+
+                    <div class="card">
+                        <img src="./assets/imgs/home/basquete masculino.jpg" alt="" />
+                        <div>
+                            <h3>NBA 2023 - Estados Unidos</h3>
+                            <p>
+                                Denver Nuggets é um dos campeões mais dominantes na era pós-Jordan
+                                O time de Colorado foi campeão com um desempenho impressionante. Foram 16 vitórias e
+                                apenas
+                                quatro derrotas nos confrontos que culminaram no título inédito
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-left">
+                        <img src="./assets/imgs/home/Basquete-Feminino.webp" alt="" />
+                        <div>
+                            <h3>Olimpíadas Tóquio - 2020</h3>
+                            <p>
+                                EUA batem Japão e conquistam 7º ouro olímpico seguido no basquete feminino. A
+                                seleção feminina de basquete dos Estados Unidos venceu o Japão por 90 a 75 nesse sábado
+                                (7) e se
+                                sagrou campeã olímpica em Tóquio-2020. Com o resultado, as norte-americanas chegam à sua
+                                sétima
+                                medalha de ouro consecutiva na modalidade, que vencem dominam desde Atlanta-1996. Ainda
+                                possuem
+                                outros dois títulos, em Los Angeles-1984 e Seul-1988.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/imgs/home/futebol feminino.webp" alt="" />
+                        <div>
+                            <h3>Copa do mundo feminino 2019 - França</h3>
+                            <p>
+                                A oitava edição do Mundial de futebol feminino ocorreu na França. 24 seleções,
+                                disputaram 52 jogos em 9 estádios. Os Estados Unidos conquistaram seu quarto título
+                                mundial,
+                                derrotando na final a Holanda, campeã europeia, por 2X0. Aliás, a seleção dos EUA foi
+                                uma
+                                máquina de demolição de recordes: - primeira campeã com 100% de aproveitamento, sete
+                                vitórias em
+                                sete jogos; - maior goleada da história das Copas: 13X0 na Tailândia; - contra as
+                                tailandesas,
+                                Alex Morgan tornou-se a primeira jogadora a marcar cinco gols em um mesmo jogo de
+                                Mundial
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-left">
+                        <img src="./assets/imgs/home/Futebol masculino.jpeg" alt="" />
+                        <div>
+                            <h3>Copa do mundo 2022 - Catar</h3>
+                            <p>
+                                Em uma partida disputada até o último minuto, a Argentina confirmou o
+                                favoritismo e conquistou a Copa do Mundo de 2022, realizada no Catar.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <div class="assine">
+            <h2>Não é assinante? Assine agora!</h2>
+            <a href="cadastroAssinatura.html"><button class="btn-assine">Assinar</button></a>
+        </div>
+        <div class="box1">
+            <div class="box_cont1">
+                World Sports tem o orgulho de doar nossos lucros para apoiar várias instituições.
+                <p>Aqui estão algumas das organizações que ajudamos a financiar</p>
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide"><img src="assets/imgs/Home/AdaptSurf-removebg-preview.png" alt="">
+                </div>
+                <div class="slide"><img src="assets/imgs/Home/ADD.png" alt="">
+                </div>
+                <div class="slide"><img src="assets/imgs/Home/instituto_neymar_jr-removebg-preview.png" alt="">
+                </div>
+                <div class="slide"><img src="assets/imgs/Home/logo-footerAACD-removebg-preview.png" alt="">
+                </div>
+                <div class="slide"><img src="assets/imgs/Home/LOGO-IVJR-BRANCA-768x281.png" alt="">
+                </div>
+
+                <div class="slide"><img src="assets/imgs/Home/AdaptSurf-removebg-preview.png" alt="">
+                </div>
+                <div class="slide"><img src="assets/imgs/Home/ADD.png" alt="">
+                </div>
+                <div class="slide"><img src="assets/imgs/Home/instituto_neymar_jr-removebg-preview.png" alt="">
+                </div>
+                <div class="slide"><img src="assets/imgs/Home/logo-footerAACD-removebg-preview.png" alt="">
+                </div>
+                <div class="slide"><img src="assets/imgs/Home/LOGO-IVJR-BRANCA-768x281.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <section class="doacoes">
+            <div class="titulo-doacoes">
+                <h2>Gostaria de contribuir com a causa? Doe!</h2>
+            </div>
+            <div class="formulario">
+                <div class="container-form">
+                    <form class="form-assinar" action="" method="POST">
+                        <label for="nome">Nome:</label>
+                        <input class="inputs" type="text" id="nome" name="nome" required><br>
+
+                        <label for="email">E-mail:</label>
+                        <input class="inputs" type="email" id="email" name="email" required><br>
+
+                        <label for="metodo_pagamento">Método de pagamento:</label>
+                        <select class="inputs" id="metodo_pagamento" name="metodo_pagamento" required>
+                            <option value="null">--</option>
+                            <option value="debito">Débito</option>
+                            <option value="pix">Pix</option>
+                        </select><br>
+
+                        <div class="debito">
+                            <label for="nomeCartao">Nome no cartão:</label>
+                            <input class="inputs" type="text" id="nomeCartao" name="nomeCartao" required><br>
+
+                            <label for="numeroCartao">Número do Cartão</label>
+                            <input class="inputs" type="number" id="numeroCartao" name="numeroCartao" required><br>
+
+                            <label for="dataExpiração">Data de expiração</label>
+                            <div class="opcoesDebito">
+                                <select class="inputs" id="dataExpiracaoMes" name="dataExpiracaoMes" required>
+                                    <option value="dataExpiracaoMes1">1</option>
+                                    <option value="dataExpiracaoMes2">2</option>
+                                    <option value="dataExpiracaoMes3">3</option>
+                                    <option value="dataExpiracaoMes4">4</option>
+                                    <option value="dataExpiracaoMes5">5</option>
+                                    <option value="dataExpiracaoMes6">6</option>
+                                    <option value="dataExpiracaoMes7">7</option>
+                                    <option value="dataExpiracaoMes8">8</option>
+                                    <option value="dataExpiracaoMes9">9</option>
+                                    <option value="dataExpiracaoMes10">10</option>
+                                    <option value="dataExpiracaoMes11">11</option>
+                                    <option value="dataExpiracaoMes12">12</option>
+                                </select>
+
+                                <select class="inputs" id="dataExpiracaoAno" name="dataExpiracaoAno" required>
+                                    <option value="dataExpiracaoAno2023">2023</option>
+                                    <option value="dataExpiracaoAno2024">2024</option>
+                                    <option value="dataExpiracaoAno2025">2025</option>
+                                    <option value="dataExpiracaoAno2026">2026</option>
+                                    <option value="dataExpiracaoAno2027">2027</option>
+                                    <option value="dataExpiracaoAno2028">2028</option>
+                                    <option value="dataExpiracaoAno2029">2029</option>
+                                    <option value="dataExpiracaoAno2030">2030</option>
+                                    <option value="dataExpiracaoAno2031">2031</option>
+                                    <option value="dataExpiracaoAno2032">2032</option>
+                                    <option value="dataExpiracaoAno2033">2033</option>
+                                    <option value="dataExpiracaoAno2034">2034</option>
+                                </select>
+                            </div>
+                            <label for="cvv">CVV</label>
+                            <input class="inputs" type="number" id="cvv" name="cvv" required><br>
+                        </div>
+
+                        <div class="pix">
+                            <div class="containerQrcode"><img src="./assets/imgs/home/qr_code.png" alt=""></div>
+                            <div class="codigoPix">
+                                <p>Copiar código PIX</p>
+                                <label for="pixCodigo"></label>
+                                <input type="text"
+                                    value="00020126580014BR.GOV.BCB.PIX01360ad2edc4-48a1-40c7-81cf-1b502ae5c6b15204000053039865802BR5925Luiz Felipe da Silva Oliv6009SAO PAULO61080540900062250521YF2QSYQL0eo3tr511evxr63044445"
+                                    readonly>
+                            </div>
+                        </div>
+
+                        <label for="instituicao">Instituição que deseja doar: </label>
+                        <select class="inputs" id="instituicao" name="instituicao" required>
+                            <option value="aacd">AACD</option>
+                            <option value="add">Associação desportiva para deficientes</option>
+                            <option value="adaptsurf">Adaptsurf</option>
+                            <option value="institutoNeymarJr">Instituto Neymar Jr</option>
+                            <option value="institutoViniJr">Instituto Vini Jr</option>
+                        </select>
+
+                        <label for="valor">Valor R$:</label>
+                        <input class="inputs" type="number" id="valor" name="valor" required><br>
+                        <button class="btn-enviar" id="btn-enviar" type="button">Enviar</button>
+
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <!--- fim do home-->
+
+        </form>
+        <footer>
+            <div class="content">
+                <div class="top">
+                    <div class="media-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="link-boxes">
+                    <ul class="box">
+                        <li class="link_name">Empresa</li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Contate-nos</a></li>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Sedes</a></li>
+                    </ul>
+                    <ul class="box">
+                        <li class="link_name">Serviços</li>
+                        <li><a href="#">Streaming</a></li>
+                        <li><a href="#">Loja oficial</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#">Camisas<br>personalizadas</a></li>
+                    </ul>
+                    <ul class="box">
+
+                        <li class="link_name">Conta</li>
+                        <li><a href="#">Perfil</a></li>
+                        <li><a href="#">Recomend.</a></li>
+                        <li><a href="#">Preferências</a></li>
+                        <li><a href="#">Histórico</a></li>
+                    </ul>
+                    <ul class="box">
+                        <li class="link_name">Fundadores</li>
+                        <li><a href="#">M. Stephany</a></li>
+                        <li><a href="#">L. Felipe</a></li>
+                        <li><a href="#">M. Tavares</a></li>
+                        <li><a href="#">V. Mantovani</a></li>
+                    </ul>
+                </div>
+                <div class="apps">
+                    <ul class="baixem">
+                        <p>Baixem nosso app:<br></p><img src="./assets/imgs/icons/apps.png" alt="">
+                    </ul>
+
+                    <ul class="box input-box">
+                        <li class="link_name">Mande uma<br>mensagem</li><textarea
+                            placeholder="Digite aqui seu elogio ou reclamação" name="" id="" cols="30"
+                            rows="10"></textarea>
+                        </li>
+                        <li><input type="button" value="Enviar"></li>
+                    </ul>
+
+                </div>
+            </div>
+            </div>
+            <div class="bottom-details">
+                <div class="bottom_text">
+                    <span class="copyright_text">Copyright © 2023 World Sports. Todos os direitos
+                        reservados</span>
+                    <span class="policy_terms">
+                        <a href="#">Política de Privacidade</a>
+                        <a href="#">Termos e condições</a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+        </main>
+        <script src="./assets/js/index.js"></script>
+        <script src="./assets/js/main.js"></script>
+        <script src="./assets/js/navbar.js"></script>
+        <script src="./assets/js/login.js"></script>
+
+    </body>
+
+
+
 </html>

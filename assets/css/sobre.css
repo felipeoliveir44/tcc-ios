@@ -1,0 +1,76 @@
+body {
+    background-color: #0F0F0F;
+}
+
+/* Scroll voltar para inicio */
+.scroll-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: #F77F00;
+    position: fixed;
+    right: 1px;
+    bottom: 1px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+    transition: all .4s ease;
+    border: 1px;
+    cursor: pointer;
+}
+
+.scroll {
+    padding: 0;
+    color: white;
+}
+
+.scroll-top.active {
+    opacity: 1;
+    visibility: visible;
+
+}
+
+/* End*/
+
+.sobre {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 50px;
+}
+
+.sobre_conteudo {
+    background-color: #fff;
+}
+
+.sobre div {
+    padding-bottom: 25px;
+}
+
+.sobre div h1,
+h2,
+h3 {
+    font-size: 2rem;
+    border-bottom: 1px solid #F77F00;
+}
+
+.sobre div p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.sobre div p strong {
+    color: #000000;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .scroll-top {
+        width: 50px;
+        height: 50px;
+    }
+}

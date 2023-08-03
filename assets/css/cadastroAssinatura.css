@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  font-family: "Tahoma", sans-serif;
+  background: #0F0F0F;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  color: #fff;
+}
+
+/* Scroll voltar para inicio */
+.scroll-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  background-color: #F77F00;
+  position: fixed;
+  right: 1px;
+  bottom: 1px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+  transition: all .4s ease;
+  border: 1px;
+  cursor: pointer;
+}
+
+.scroll {
+  padding: 0;
+  color: white;
+}
+
+.scroll-top.active {
+  opacity: 1;
+  visibility: visible;
+
+}
+
+/* End*/
+
+.conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario {
+  display: flex;
+  font-size: large;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #0F0F0F, #F77F00) 1;
+  padding: 30px;
+}
+
+.form-assinar {
+  width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.inputs {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+#btn-enviar {
+  background-color: #F77F00;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.requerimentos p {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.opcoesDebito {
+  display: flex;
+  gap: 10px;
+}
+
+.debito {
+  display: none;
+}
+
+.pix {
+  display: none;
+}
+
+.containerQrcode img {
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .scroll-top {
+    width: 50px;
+    height: 50px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .form-assinar {
+    width: 100%;
+  }
+}
